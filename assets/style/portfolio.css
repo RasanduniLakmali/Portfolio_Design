@@ -100,3 +100,59 @@ header>nav>a:hover{
     font-weight: 800;
     font-size: 20px;
 }
+#home>section:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle1{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #06EA53;
+
+}
+#circle2{
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    background-color: #C3F2D0;
+    margin-left: 20px;
+
+}
+#circle3 {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #06EA53;
+    transform: translate(150px,-20px);
+    border: 8px solid black;
+}
+#circle4{
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: #06EA53;
+    border: 8px solid black;
+    transform: translate(-10px ,-370px);
+}
+.blur_circles{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #06EA53;
+    filter: blur(15px);
+}
+#circle5{
+    transform: translate(-300px,-550px);
+}
+#circle6{
+    transform: translate(-500px,-150px);
+}
+#my_image{
+    height: 410px;
+    transform: translate(30px,-49px);
+    border: 1px solid transparent;
+    border-bottom-left-radius: 200px;  /* Adjust to control the curve */
+    border-bottom-right-radius: 200px; /* Adjust to control the curve */
+}
