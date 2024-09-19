@@ -195,3 +195,16 @@ header>nav>a:hover{
     height: 330px;
     transform: translate(-30px,-30px);
 }
+#about_heading{
+    color: white;
+    font-size: 30px;
+    font-family: AnjaliOldLipi;
+}
+#about_heading2{
+    color: white;
+    font-size: 45px;
+    font-family: "DejaVu Sans Mono";
+}
+.name{
+    color: #06EA53;
+}
