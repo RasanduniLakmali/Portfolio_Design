@@ -229,3 +229,38 @@ header>nav>a:hover{
 .second_words{
     color: #B8AEAE;
 }
+#rec1{
+    width: 250px;
+    height: 50px;
+    background: black;
+    border-radius: 60px;
+}
+#rec2{
+    width: 180px;
+    height: 48px;
+    background: #06EA53;
+    border-radius: 60px;
+    transform: translateX(70px);
+}
+#rec2>h6{
+    color: white;
+    font-size: 18px;
+    transform: translate(32px,12px);
+}
+#circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(12px,-43px);
+}
+#arrow{
+    width: 25px;
+    transform: translate(8px,6px);
+}
+#name_tag{
+    color: white;
+    font-size: 32px;
+    transform: translate(300px,-43px);
+    /*font-family: "DejaVu Sans Mono";*/
+}
