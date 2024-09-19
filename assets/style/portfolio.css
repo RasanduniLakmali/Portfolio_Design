@@ -208,7 +208,7 @@ header>nav>a:hover{
 .name{
     color: #06EA53;
 }
-#right>div:nth-child(2)>p{
+#about_para{
     color: #B8AEAE;
     font-size: 20px;
     text-align: justify;
@@ -262,5 +262,8 @@ header>nav>a:hover{
     color: white;
     font-size: 32px;
     transform: translate(300px,-43px);
-    /*font-family: "DejaVu Sans Mono";*/
+    font-family: "Italianno", cursive;
+    font-weight: 500;
+    font-style: normal;
 }
+
