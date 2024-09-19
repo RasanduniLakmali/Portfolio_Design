@@ -50,5 +50,44 @@ header>nav>a:hover{
     padding-bottom: 5px;
     padding-left: 15px;
     padding-right: 15px;
+}
+#home{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
 
+}
+#home>section:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 3px;
+
+}
+#home_hd1{
+    font-size: 37px;
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+#first_word{
+    color: #06EA53;
+}
+#home_hd2{
+    font-family: "Shippori Antique B1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+#home_hd3{
+    font-family: "Andika", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
 }
