@@ -266,4 +266,29 @@ header>nav>a:hover{
     font-weight: 500;
     font-style: normal;
 }
+@media all and (max-width: 1440px) {
 
+    #home{
+        height: 801px;
+    }
+    #social_links>a{
+        transform: translateX(60px);
+    }
+    #about{
+        height: 801px;
+    }
+    #rec1{
+        transform: translateY(60px);
+    }
+    #name_tag{
+        transform: translate(300px,15px);
+    }
+    #info{
+        font-size: 22px;
+        transform: translateY(40px);
+    }
+    #about_para{
+        font-size: 21px;
+        transform: translateY(20px);
+    }
+}
