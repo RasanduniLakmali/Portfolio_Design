@@ -91,3 +91,12 @@ header>nav>a:hover{
     font-style: normal;
     font-size: 40px;
 }
+#btn1{
+    height: 40px;
+    width: 140px;
+    background: #06EA53;
+    color: white;
+    border-radius: 7px;
+    font-weight: 800;
+    font-size: 20px;
+}
