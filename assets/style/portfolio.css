@@ -292,3 +292,49 @@ header>nav>a:hover{
         transform: translateY(20px);
     }
 }
+@media all and (max-width: 1024px) {
+
+    #home{
+        height: 801px;
+    }
+    #circle1{
+        height: 320px;
+        width: 320px;
+        transform: translateX(-15px);
+    }
+    #circle2{
+        height: 300px;
+        width: 300px;
+        transform: translateX(-10px);
+    }
+    #my_image{
+        height: 340px;
+        transform: translate(17px,-41px);
+    }
+    #circle3{
+        height: 55px;
+        width: 60px;
+        transform: translate(110px,-13px);
+    }
+    #circle4{
+        height: 40px;
+        width: 40px;
+        transform: translate(-5px,-320px);
+    }
+    #social_links>a{
+        margin: 20px 0px;
+        transform: translateX(20px);
+    }
+    #home_hd2{
+        font-size: 45px;
+    }
+    #home_hd3{
+        font-size: 30px;
+    }
+    #circle5{
+        transform: translate(-140px,-500px);
+    }
+    #circle6{
+        transform: translate(-200px,-90px);
+    }
+}
