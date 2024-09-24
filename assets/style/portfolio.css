@@ -266,6 +266,106 @@ header>nav>a:hover{
     font-weight: 500;
     font-style: normal;
 }
+/* education */
+
+#education{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C2B2C;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.year{
+    color: #06EA53;
+    font-weight: 200;
+    border: 2px solid #06EA53;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#first_yr{
+    position: relative;
+    left: 85px;
+}
+#edu_heading{
+    color: white;
+    font-size: 30px;
+    font-family: AnjaliOldLipi;
+    position: relative;
+    left: 45vw;
+}
+.exm_heading{
+    color: white;
+    font-size: 20px;
+    font-family: Andika;
+}
+#heading1{
+    position: relative;
+    top: 60px;
+}
+.para{
+    color: #B8AEAE;
+    font-size: 18px;
+}
+#para1{
+    transform: translate(80px,60px);
+}
+#second_yr{
+    position: relative;
+    left: 600px;
+    top: -168px;
+}
+#heading2{
+    position: relative;
+    left: 515px;
+    top: -110px;
+}
+#para2{
+    transform: translate(600px,-110px);
+}
+#third_yr{
+    position: relative;
+    left: 80px;
+    top: -40px;
+}
+#heading3{
+    position: relative;
+    left: -58px;
+    top: 20px;
+}
+#para3{
+    position: relative;
+    left: 77px;
+    top: 20px;
+}
+#fourth_yr{
+    position: relative;
+    left: 600px;
+    top: -220px;
+}
+#heading4{
+    position: relative;
+    left: 485px;
+    top: -165px;
+}
+#para4{
+    transform: translate(600px,-167px);
+}
+#edu_img_rec{
+    height: 300px;
+    width: 250px;
+    background: #1d1c1c;
+    transform: translate(400px,230px);
+    border-top-left-radius: 80px;
+    border: 6px solid #558967;
+}
+#edu_img{
+    height:300px;
+    width :400px;
+    transform: translateX(-120px);
+}
 @media all and (max-width: 1440px) {
 
     #home{
@@ -338,3 +438,85 @@ header>nav>a:hover{
         transform: translate(-200px,-90px);
     }
 }
+@media all and (max-width: 768px){
+    header>nav>a{
+        color: transparent;
+        width: 760px;
+    }
+    #home {
+        grid-template-columns: repeat(1, 1fr);
+        /*height: 801px;*/
+    }
+    .heading{
+        transform: translateY(400px);
+
+    }
+    #circle1{
+        height: 320px;
+        width: 320px;
+        transform: translate(-10px,-240px);
+    }
+    #circle2{
+        height: 300px;
+        width: 300px;
+        transform: translateX(-10px);
+    }
+    #circle3{
+        height: 50px;
+        width: 50px;
+        transform: translate(113px,-14px);
+    }
+    #circle4{
+        height: 40px;
+        aspect-ratio: 1/1;
+        transform: translate(-6px,-300px);
+    }
+    #my_image{
+        height: 330px;
+        transform: translate(18px,-41px);
+    }
+    #btn1{
+        transform: translate(100px,490px);
+        width: 100px;
+    }
+    #first_word{
+        position: absolute;
+        left: 80px;
+        top: -390px;
+    }
+    #second_word{
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        font-size: 30px;
+    }
+    #home_hd2{
+        font-size: 35px;
+        transform: translate(-15px,490px);
+    }
+    #home_hd3{
+        font-size: 27px;
+        transform: translate(-10px,500px);
+    }
+    #social_links>a{
+        transform: translate(55px,-240px);
+
+    }
+    #social_links>a>img{
+        height: 37px;
+    }
+    #social_links>a:hover{
+        padding: 2px;
+    }
+    .blur_circles{
+        height: 40px;
+        width: 40px;
+    }
+    #circle5{
+        transform: translate(410px,50px);
+    }
+    #circle6{
+        transform: translate(-100px,-250px);
+    }
+}
+
