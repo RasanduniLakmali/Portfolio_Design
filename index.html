@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- header section -->
@@ -217,7 +221,6 @@
                 <img src="assets/images/edu_image.png" id="edu_img" >
             </div>
         </section>
-
     </section>
 </main>
 
@@ -226,47 +229,36 @@
 
     <section id="services">
 
-        <!-- Heading -->
-        <h4>Services</h4>
-        <h2>I am Specialized In</h2>
+         <section>
+             <h5 id="service_heading1">Services</h5>
+             <h4 id="service_heading2">I'm Specialized In</h4>
+         </section>
 
-        <section>
-            <!-- Service 1 -->
-            <div>
-                <img src="/assets/images/front_end.png" height="30" alt="front end image">
-                <h5>Front-end Development</h5>
-            </div>
-            <!-- Service 2 -->
-            <div>
-                <img src="/assets/images/back_end.png" height="30" alt="back end image">
-                <h5>Back-end Development</h5>
+          <section>
+              
+            <div class="hexagon" id="hex1"></div>
+            <div class="hexagon" id="hex2"></div>
+            <div class="hexagon" id="hex3"></div>
+            <div class="hexagon" id="hex4"></div>
+            <div class="hexagon" id="hex5"></div>
+            <div class="hexagon" id="hex6"></div>
+              <img src="assets/images/front_end_img.png" id="front_end_img">
+              <h5 class="service_types" id="service1">Front-end<br>Development</h5>
+              <img src="assets/images/back_end_img.png" id="back_end_img">
+              <h5 class="service_types" id="service2">Back-end<br>Development</h5>
+              <img src="assets/images/web_design_img.png" id="web_img">
+              <h5 class="service_types" id="service3">Web Design</h5>
+              <img src="assets/images/mobile_develop_img.png" id="app_img">
+              <h5 class="service_types" id="service4">Mobile App<br>Development</h5>
+              <img src="assets/images/programming_img.png" id="pro_img">
+              <h5 class="service_types" id="service5">Object oriented<br>Programming</h5>
+              <img src="assets/images/db_manage_img.png" id="db_img">
+              <h5 class="service_types" id="service6">Database<br>Management</h5>
+              <img src="assets/images/service_logo.png" id="service_logo">
+          </section>
 
-            </div>
-            <!-- Service 3 -->
-            <div>
-                <img src="/assets/images/website_design.png" height="30" alt="website design image">
-                <h5>Website Design</h5>
-            </div>
-            <!-- Service 4 -->
-            <div>
-                <img src="/assets/images/app_development.png" height="30" alt="app development image">
-                <h5>Mobile App Development</h5>
-            </div>
-            <!-- Service 5 -->
-            <div>
-                <img src="/assets/images/oop.png" height="30" alt="OOP image">
-                <h5>Object Oriented Programming</h5>
-            </div>
-            <!-- Service 6 -->
-            <div>
-                <img src="/assets/images/database.png" height="30" alt="database management image">
-                <h5>Database Management</h5>
-            </div>
-            <div>
-                <img src="/assets/images/name_logo.png" height="80" alt="name logo image">
-            </div>
-        </section>
     </section>
+
 </main>
 
 <!-- Projects Section -->
@@ -509,24 +501,29 @@
 
 <!--Footer Section -->
 <footer>
-    <section>
+    <div id="footer_logo">
+        <img src="/assets/images/my_logo.png" alt="my logo"  class="logo">
+    </div>
 
-        <!-- Footer logo section -->
-        <div>
-            <span><img src="/assets/images/my_logo.png" height="60" alt="my logo"> Powered by Rasanduni.All rights reserved.</span>
-        </div>
-        <br>
+    <div id="footer_ribbon">
+        Powered by Rasanduni.All Rights Reserved
+    </div>
 
-        <!-- Footer social links section -->
-        <section>
-             <span>
-                <img src="/assets/images/whatsapp_img.png" height="30" alt="whatsapp icon">
-                <img src="/assets/images/fb_icon.png" height="30" alt="facebook icon">
-                 <img src="/assets/images/linkedin_icon.png" height="30" alt="linkedin icon">
-                 <img src="/assets/images/github_icon.png" height="30" alt="github icon">
-             </span>
-        </section>
-    </section>
+    <nav>
+        <a href="#">
+            <img src="/assets/images/whatsapp_icon.png" alt="whatsapp icon" class="icons" >
+        </a>
+        <a href="#">
+            <img src="/assets/images/fb_icon.png" alt="fb icon" class="icons">
+        </a>
+        <a href="#">
+            <img src="/assets/images/linkedin_icon.png" alt="linkedin icon" class="icons">
+        </a>
+        <a href="#">
+            <img src="/assets/images/github_icon.png" alt="github icon" class="icons">
+        </a>
+    </nav>
+
 </footer>
 
 </body>
