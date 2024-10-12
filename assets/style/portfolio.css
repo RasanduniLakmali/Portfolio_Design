@@ -250,7 +250,6 @@ header>nav>a:hover{
     transform: translate(32px,12px);
 }
 
-
 #circle{
     width: 40px;
     height: 40px;
@@ -667,6 +666,117 @@ header>nav>a:hover{
     top: 370px;
 }
 
+/* Assignments */
+
+#assignments{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+#assignments_heading{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: AnjaliOldLipi;
+    font-size: 30px;
+    left: 45vw;
+}
+#viewBtn_rec1{
+    height: 40px;
+    width: 170px;
+    background: #434242;
+    border-radius: 20px;
+    position: relative;
+    left: 1200px;
+    top: 40px;
+}
+#viewBtn{
+    height: 40px;
+    width: 90px;
+    position: absolute;
+    background: #06EA53;
+    border-radius: 20px;
+    right: 0;
+    border-color: transparent;
+    color: white;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 2500;
+    font-style: normal;
+}
+#viewBtn_circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    background: white;
+    /*position: absolute;*/
+    /*left: 3px;*/
+
+}
+#arrow2{
+    width: 25px;
+    transform: translate(8px,6px);
+}
+#assignment_content{
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+#assignment_content>div{
+    height: 230px;
+    width: 210px;
+    background: #2C2B2C;
+    border-radius: 40px;
+}
+#assignment_content>div:first-child{
+    transform: translate(160px,75px);
+}
+#assignment_content>div:nth-child(2){
+    transform: translate(160px,75px);
+}
+#assignment_content>div:nth-child(3){
+    transform: translate(160px,75px);
+}
+#assignment_content>div:nth-child(4){
+    transform: translate(160px,75px);
+}
+#assignment_content>div:nth-child(5){
+    transform: translate(160px,80px);
+}
+#assignment_content>div:nth-child(6){
+    transform: translate(160px,80px);
+}
+#assignment_content>div:nth-child(7){
+    transform: translate(160px,80px);
+}
+#assignment_content>div:nth-child(8){
+    transform: translate(160px,80px);
+}
+#assignment_content>div>img{
+    height: 70px;
+    transform: translate(60px,30px);
+}
+#assignment_content>div>h5{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #B8AEAE;
+    transform: translate(35px,10px);
+}
+.viewButtons{
+    width: 70px;
+    height: 30px;
+    border-radius: 7px;
+    background: #06EA53;
+    color: white;
+    border-color: transparent;
+    transform: translateX(65px);
+}
 /* footer */
 
 footer{
