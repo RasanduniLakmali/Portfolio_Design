@@ -48,6 +48,10 @@
             rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder&family=Kavoon&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -551,55 +555,73 @@
 
 <!-- Contact Section -->
 <main>
+
     <section id="contact">
+
         <!-- Heading -->
-        <h4>Contacts</h4>
+
+        <h4 id="contact_heading">Contacts</h4>
 
         <!-- Content -->
-        <section>
+    <section id="contact_content">
+
+        <div id="contact_details">
             <div>
-                <h4>Let's Connect and Create Amazing Projects!</h4>
+                <h4>Let's Connect and Create<br>Amazing Projects!</h4>
                 <p>
-                    Thank you for visiting my portfolio!
-                    If you have any inquiries, project opportunities,
-                    or just want to connect, please feel free to reach out.
-                    I look forward to hearing from you and will respond as
-                    promptly as possible.
+                    Thank you for visiting my portfolio! If you have any<br>inquiries, project opportunities,
+                    or just want to<br>connect, please feel free to reach out.
+                    I look forward<br>to hearing from you and will respond as
+                    promptly as<br>possible.
                 </p>
             </div>
-            <div>
-                <span><img src="/assets/images/call_icon.png" height="30" alt="call icon"><b>+94762034440</b></span>
-                <br>
-                <span><img src="/assets/images/email_icon.png" height="30" alt="gmail icon"><b>rasandunilakmali26@gmail.com</b></span>
-                <br>
-                <span><img src="/assets/images/location_icon.png" height="30" alt="location icon"><b>Rathnapura,Sri Lanka</b></span>
+
+            <div id="info2">
+
+                <div><img src="/assets/images/call_icon2.png" height="30" alt="call icon"><span>+94762034440</span></div>
+
+                <div><img src="/assets/images/email_icon.png" height="30" alt="gmail icon"><span>rasandunilakmali26@gmail.com</span></div>
+
+                <div><img src="/assets/images/location_icon2.png" height="30" alt="location icon"><span>Rathnapura,Sri Lanka</span></div>
             </div>
-        </section>
+        </div>
 
         <!-- Message Form -->
-        <section>
+
+        <div id="message_form">
+
             <form action="detail.html" method="post">
-                <h3>Reach Me</h3>
 
-                <label for="name">Name</label><br>
-                <input type="text" name="client-name" id="name" placeholder="Enter Your Name"><br>
+                <h3 id="message_form_heading">Reach Me</h3>
 
-                <label for="email">Email</label><br>
-                <input type="email" name="client-email" id="email" placeholder="Enter Your Email"><br>
+                <label for="name" class="labels">Name</label><br><br>
+                <input type="text" name="client-name" id="name" placeholder="Enter Your Name" class="fields"><br>
 
-                <label for="message">Message</label><br>
+                <br>
+
+                <label for="email" class="labels">Email</label><br><br>
+                <input type="email" name="client-email" id="email" placeholder="Enter Your Email" class="fields"><br>
+
+                <br>
+
+                <label for="message" class="labels">Message</label><br><br>
                 <textarea
                         name="client-message"
                         id="message"
                         placeholder="Enter Your Message"
-                        rows="10"
+                        rows="5"
                         cols="30">
                 </textarea>
                 <br>
-                <button type="submit">Submit</button>
+                <button type="submit" id="submit_btn">Submit</button>
+
             </form>
-        </section>
+        </div>
+
     </section>
+
+    </section>
+
 </main>
 
 <!--Footer Section -->

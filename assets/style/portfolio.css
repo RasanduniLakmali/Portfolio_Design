@@ -1104,6 +1104,126 @@ header>nav>a:hover{
     left: -60%;
 }
 
+/* Contact */
+
+#contact{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C2B2C;
+    position: relative;
+    overflow: hidden;
+
+}
+#contact_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    transform: translate(100px,150px);
+}
+
+#contact_heading{
+    position: absolute;
+    top: 15px;
+    color: white;
+    font-family: AnjaliOldLipi;
+    font-size: 35px;
+    left: 45vw;
+}
+#contact_details>div:first-child>h4{
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background: -webkit-linear-gradient(#06EA53, #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateX(130px);
+}
+#contact_details>div:first-child>p{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #B8AEAE;
+    transform: translate(130px,-20px);
+}
+#info2{
+    transform: translate(110px,20px);
+
+}
+#info2>div{
+   margin: 24px;
+}
+#info2>div>span{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    position: absolute;
+    left: 75px;
+
+}
+#message_form{
+    width: 400px;
+    height: 500px;
+    border: 1px solid #06EA53;
+    border-radius: 20px;
+    position: relative;
+    left: 110px;
+    top: 7px;
+    background: #4e5450;
+}
+#message_form_heading{
+    font-size: 30px;
+    color: #06EA53;
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translate(120px,10px);
+}
+.labels{
+    font-size: 20px;
+    font-family: "Inder", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.fields{
+    height: 25px;
+    width: 250px;
+    margin-left: 65px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: #4e5450;
+    color: #B8AEAE;
+    font-family: "Inder", sans-serif;
+    font-weight: 600;
+
+}
+#message_form>form>textarea{
+    width: 250px;
+    margin-left: 65px;
+    border: 2px solid white;
+    background: #4e5450;
+    color: #B8AEAE;
+    font-family: "Inder", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+#submit_btn{
+    height: 30px;
+    width: 100px;
+    color: white;
+    background: #06EA53;
+    border-radius: 10px;
+    border-color: transparent;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-left: 150px;
+    margin-top: 20px;
+}
 /* footer */
 
 footer{
