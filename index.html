@@ -42,6 +42,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
@@ -401,64 +406,83 @@
 <!-- Skills section -->
 <main>
 
-    <section>
+    <section id="skills">
+
         <!-- Heading -->
-        <div>
-            <h4>My Skills and Achievements</h4>
-            <p>I am a full stack developer skilled in Java, HTML, MySQL, Figma, and CSS.I build robust backend solutions with Java and create responsive user interfaces with HTML and CSS. My expertise in MySQL ensures efficient database management, while Figma allows me to design high-fidelity prototypes. This diverse skill set enables me to deliver seamless and efficient web applications.</p>
+        <h4 id="skill_heading">My Skills and Achievements</h4>
+
+        <div id="skill_rec1">
+            <p id="skill_para">I am a full stack developer skilled in Java, HTML, MySQL, Figma, and CSS.I build robust backend solutions with Java and create responsive user interfaces with HTML and CSS. My expertise in MySQL ensures efficient database management, while Figma allows me to design high-fidelity prototypes. This diverse skill set enables me to deliver seamless and efficient web applications.</p>
+            <div id="skill_rec3"></div>
+            <div id="skill_rec4"></div>
+            <div id="skill_rec5"></div>
+            <div id="skill_rec6"></div>
         </div>
 
-        <section>
+        <section id="skill_content">
 
             <!-- Skills content -->
-            <div>
-                <img src="/assets/images/figma_img.png" height="50" alt="figma icon">
-                <br>
-                <b>85%</b>
+
+            <div id="skill1">
+                <img src="/assets/images/figma_img.png"  alt="figma icon">
+
+                    <div class="circular-progress" id="progress1">
+                        <div class="value-container" id="value1">0%</div>
+                    </div>
+
             </div>
-            <div>
-                <img src="/assets/images/HTML_img.png" height="50" alt="HTML icon">
-                <br>
-                <b>75%</b>
+            <div id="skill2">
+                <img src="/assets/images/HTML_img.png" alt="HTML icon">
+
+                <div class="circular-progress" id="progress2">
+                    <div class="value-container" id="value2">0%</div>
+                </div>
+
             </div>
-            <div>
-                <img src="/assets/images/CSS_img.png" height="50" alt="CSS icon">
-                <br>
-                <b>70%</b>
+            <div id="skill3">
+                <img src="/assets/images/CSS_img.png" alt="CSS icon">
+
+                <div class="circular-progress" id="progress3">
+                    <div class="value-container" id="value3">0%</div>
+                </div>
             </div>
-            <div>
-                <img src="/assets/images/Mysql_img.png" height="50" alt="Mysql icon">
-                <br>
-                <b>90%</b>
+            <div id="skill4">
+                <img src="/assets/images/Mysql_img.png" alt="Mysql icon">
+
+                <div class="circular-progress" id="progress4">
+                    <div class="value-container" id="value4">0%</div>
+                </div>
             </div>
 
-            <div>
-                <img src="/assets/images/JS_img.png" height="50" alt="Javascript icon">
-                <br>
-                <b>70%</b>
+            <div id="skill5">
+                <img src="/assets/images/JS_img.png"  alt="Javascript icon">
+
+                <div class="circular-progress" id="progress5">
+                    <div class="value-container" id="value5">0%</div>
+                </div>
             </div>
-            <div>
-                <img src="/assets/images/python_img.png" height="50" alt="python icon">
-                <br>
-                <b>75%</b>
+            <div id="skill6">
+                <img src="/assets/images/python_img.png" alt="python icon">
+
+                <div class="circular-progress" id="progress6">
+                    <div class="value-container" id="value6">0%</div>
+                </div>
             </div>
         </section>
 
-        <!-- Achievements -->
-        <section>
-            <div>
-                <h5>Educational Certificates</h5>
-                <button>View</button>
-            </div>
-            <div>
-                <h5>Professional Course Certificates</h5>
-                <button>View</button>
-            </div>
-            <div>
-                <h5>Extra Activities Certificates</h5>
-                <button>View</button>
-            </div>
+        <!-- Achievements content -->
+
+        <section id="achievements">
+              <div>
+                <img src="assets/images/achievement_img1.jpg" alt="award image">
+                  <p>Team SolvTech, has been honored with the<br>"Best Business Visionary Award" at the prestigious<br>Innovesta 2024 event organized by IJSE</p>
+              </div>
+              <div>
+                  <img src="assets/images/achievement_img2.jpg" alt="award image">
+                  <p>Honored with certificate for the participation for<br>Innovesta 2024</p>
+              </div>
         </section>
+
     </section>
 </main>
 
@@ -561,5 +585,6 @@
 
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -777,6 +777,169 @@ header>nav>a:hover{
     border-color: transparent;
     transform: translateX(65px);
 }
+
+/* skills */
+
+#skills{
+    height: 130vh;
+    width: 100vw;
+    background-color: #2C2B2C;
+    position: relative;
+    overflow-y: hidden;
+}
+#skill_heading{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-family: AnjaliOldLipi;
+    font-size: 30px;
+    left: 40vw;
+}
+#skill_rec1{
+    height: 120px;
+    width: 660px;
+    background: black;
+    color: white;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+
+}
+#skill_para{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 2500;
+    font-style: normal;
+}
+#skill_rec3{
+    height: 10px;
+    width: 75px;
+    background: #06EA53;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+}
+#skill_rec4{
+    width: 10px;
+    height: 75px;
+    background: #06EA53;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+#skill_rec5{
+    height: 10px;
+    width: 75px;
+    background: #06EA53;
+    position: absolute;
+    left: 610px;
+    top: 130px;
+}
+#skill_rec6{
+    width: 10px;
+    height: 75px;
+    background: #06EA53;
+    position: absolute;
+    left: 675px;
+    top: 60px;
+}
+#skill_content{
+    transform: translateY(50px);
+    width: 100vw;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+#skill_content>div{
+    height: 220px;
+    width: 140px;
+    background: #2C2B2C;
+    border-radius: 80px;
+    border: 1px solid #06EA53;
+    transform: translate(130px,330px);
+}
+#skill1>img{
+    height: 60px;
+    transform: translate(25px,25px);
+}
+#skill2>img{
+    height: 60px;
+    transform: translate(39px,25px);
+}
+#skill3>img{
+    height: 60px;
+    transform: translate(20px,25px);
+}
+#skill4>img{
+    height: 60px;
+    transform: translate(12px,20px);
+}
+#skill5>img{
+    height: 50px;
+    transform: translate(45px,25px);
+}
+#skill6>img{
+    height: 60px;
+    transform: translate(42px,25px);
+}
+.circular-progress{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background: white;
+    left: 20px;
+    top: 35px;
+}
+.circular-progress:before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 10px;
+    height: 80px;
+    width: 80px;
+    background-color: #2C2B2C;
+    border-radius: 50%;
+}
+.value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: white;
+    left: 30px;
+    top: 36px;
+}
+#achievements{
+    width: 80vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    transform: translate(250px,280px);
+    overflow-x: hidden;
+}
+
+#achievements>div>img{
+    height: 230px;
+    width: 350px;
+    border-radius: 15px;
+    transform: translate(30px,-10px);
+}
+#achievements>div>p{
+    color: #B8AEAE;
+    font-size: 14px;
+    transform: translate(30px,-10px);
+    font-family: AnjaliOldLipi;
+    font-weight: 900;
+}
+#achievements>div:nth-child(2)>img{
+    transform: translateY(-30px);
+}
+#achievements>div:nth-child(2)>p{
+    transform: translate(8px,-20px);
+}
 /* footer */
 
 footer{
