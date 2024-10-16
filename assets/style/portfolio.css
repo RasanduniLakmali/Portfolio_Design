@@ -7,6 +7,7 @@ html, body {
 }
 html{
     position: relative;
+
 }
 
 header{
@@ -70,7 +71,7 @@ header>nav>a:hover{
 
 }
 #home_hd1{
-    font-size: 37px;
+    font-size: 55px;
     font-family: "Andika", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -82,13 +83,13 @@ header>nav>a:hover{
     font-family: "Shippori Antique B1", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
 }
 #home_hd3{
     font-family: "Andika", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 50px;
 }
 #btn1{
     height: 40px;
@@ -171,8 +172,70 @@ header>nav>a:hover{
     padding: 5px;
 
 }
+
+/**  Home page responsive **/
+
+@media (max-width: 1440px) {
+
+    #home {
+        height: 801px;
+    }
+
+    #social_links > a {
+        transform: translateX(60px);
+    }
+}
+@media (max-width: 1024px) {
+
+    #home{
+        height: 801px;
+    }
+    #circle1{
+        height: 320px;
+        width: 320px;
+        transform: translateX(-15px);
+    }
+    #circle2{
+        height: 300px;
+        width: 300px;
+        transform: translateX(-10px);
+    }
+    #my_image{
+        height: 340px;
+        transform: translate(17px,-41px);
+    }
+    #circle3{
+        height: 55px;
+        width: 60px;
+        transform: translate(110px,-13px);
+    }
+    #circle4{
+        height: 40px;
+        width: 40px;
+        transform: translate(-5px,-320px);
+    }
+    #social_links>a{
+        margin: 20px 0px;
+        transform: translateX(20px);
+    }
+    #home_hd2{
+        font-size: 45px;
+    }
+    #home_hd3{
+        font-size: 30px;
+    }
+    #circle5{
+        transform: translate(-140px,-500px);
+    }
+    #circle6{
+        transform: translate(-200px,-90px);
+    }
+}
+
+/*about section */
+
 #about{
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     background-color: #1d1c1c;
     display: grid;
@@ -216,8 +279,7 @@ header>nav>a:hover{
 #about_para{
     color: #B8AEAE;
     font-size: 20px;
-    text-align: justify;
-    font-family: AnjaliOldLipi;
+    font-family: 'Anjali Old Lipi', sans-serif;
 }
 #info{
     width: 600px;
@@ -272,6 +334,48 @@ header>nav>a:hover{
     font-family: "Italianno", cursive;
     font-weight: 500;
     font-style: normal;
+}
+
+/**  About page responsive **/
+
+@media (max-width: 1440px) {
+
+    #about {
+        height: 801px;
+    }
+
+    #rec1 {
+        transform: translateY(60px);
+    }
+
+    #name_tag {
+        transform: translate(300px, 15px);
+    }
+
+    #info {
+        font-size: 22px;
+        transform: translateY(40px);
+    }
+
+    #about_para {
+        font-size: 21px;
+        transform: translateY(20px);
+    }
+}
+@media (max-width: 1024px) {
+
+    #image_section {
+        transform: translateX(-90px);
+    }
+
+    #right {
+        transform: translateX(-20px);
+    }
+
+    #address,
+    #my_email {
+        transform: translateX(-30px);
+    }
 }
 /* education */
 
@@ -373,7 +477,55 @@ header>nav>a:hover{
     width :400px;
     transform: translateX(-120px);
 }
+
+/**  Education page responsive **/
+
+@media (max-width: 1440px) {
+
+    #third_year {
+        transform: translateY(-50px);
+    }
+
+    #fourth_year {
+        transform: translateY(-50px);
+    }
+}
+@media (max-width: 1024px) {
+
+    #edu_heading{
+        top: -15px;
+    }
+    #first_year,
+    #third_year{
+        transform: translate(-40px,-10px);
+    }
+    #second_year,
+    #fourth_year{
+        transform: translate(-180px,25px);
+    }
+
+    #first_year p{
+        text-align: justify-all;
+    }
+    .para{
+        font-size: 14px;
+    }
+    #edu_img_section{
+        transform: translate(-100px,-40px);
+    }
+    #edu_img_rec{
+        height: 250px;
+        width: 170px;
+    }
+    #edu_img{
+        height: 200px;
+        width: 300px;
+        transform: translate(-100px,45px);
+    }
+}
+
 /* Services */
+
 #services{
     height: 100vh;
     width: 100vw;
@@ -469,7 +621,6 @@ header>nav>a:hover{
 #front_end_img{
     position: absolute;
     left: 523px;
-
     top: 220px;
 }
 .service_types{
@@ -531,6 +682,64 @@ header>nav>a:hover{
     left: 350px;
     top: 470px;
 }
+
+/**  Services page responsive **/
+
+@media (max-width: 1440px) {
+
+    #service_content {
+        transform: translate(20px, -50px);
+    }
+
+    #service_heading1 {
+        top: -10px;
+    }
+
+    #service_heading2 {
+        top: 23px;
+    }
+}
+@media (max-width: 1024px) {
+
+    .hexagon{
+        width: 140px;
+        height: 80px;
+    }
+    .hexagon::after,
+    .hexagon::before{
+        width: 100%;
+        height: 100%;
+    }
+    .service_icons{
+        height: 40px;
+    }
+    #front_end_img{
+        top: 240px;
+    }
+    #web_img{
+        top: 440px;
+    }
+    #service3{
+        left: 970px;
+
+    }
+    #db_img{
+        top: 440px;
+    }
+    #service5{
+        top: 690px;
+    }
+    #pro_img{
+        top: 660px;
+    }
+    #service_content{
+        transform: translate(-200px, -50px);
+    }
+    #service_heading2{
+        left: 38vw;
+    }
+}
+
 /* projects */
 
 #projects{
@@ -682,6 +891,19 @@ header>nav>a:hover{
     top: 370px;
 }
 
+/**  Projects page responsive **/
+
+@media (max-width: 1024px) {
+
+    #project_content{
+        padding-left: 33px;
+        padding-top: 170px;
+    }
+    #project_heading2{
+        left: 37vw;
+    }
+}
+
 /* Assignments */
 
 #assignments{
@@ -734,6 +956,7 @@ header>nav>a:hover{
     width: 25px;
     transform: translate(8px,6px);
 }
+
 #assignment_content{
     width: 80vw;
     height: 70vh;
@@ -794,6 +1017,22 @@ header>nav>a:hover{
     transform: translateX(65px);
 }
 
+/**  Assignments page responsive **/
+
+@media (max-width: 1024px) {
+
+    #assignment_content{
+        transform: translate(-115px,40px);
+        gap: 30px;
+    }
+    #assignments_heading{
+        left: 40vw;
+    }
+    #viewBtn_rec1{
+        left: 750px;
+    }
+}
+
 /* skills */
 
 #skills{
@@ -801,7 +1040,8 @@ header>nav>a:hover{
     width: 100vw;
     background-color: #2C2B2C;
     position: relative;
-    overflow-y: hidden;
+    overflow: hidden;
+
 }
 #skill_heading{
     position: absolute;
@@ -957,6 +1197,43 @@ header>nav>a:hover{
     transform: translate(8px,-20px);
 }
 
+/**  Skills page responsive **/
+
+@media (max-width: 1440px) {
+
+    #skill_content {
+        transform: translateY(15px);
+    }
+
+    #achievements {
+        transform: translate(230px, 220px);
+    }
+}
+@media (max-width: 1024px) {
+
+    #skill_rec1{
+        left: 170px;
+        top: 120px;
+    }
+    #skill_heading{
+        left: 33vw;
+    }
+    #skill_content{
+        gap: 10px;
+        transform: translate(-75px,-20px);
+    }
+    #achievements>div>img{
+        height: 200px;
+        width: 320px;
+    }
+    #achievements{
+        transform: translate(120px,190px);
+    }
+    #achievements>div:nth-child(2)>img{
+        transform: translateY(-17px);
+
+    }
+}
 
 /* Gallery */
 
@@ -1104,6 +1381,22 @@ header>nav>a:hover{
     left: -60%;
 }
 
+/**  Gallery page responsive **/
+
+@media (max-width: 1440px) {
+
+    #gallery_heading {
+        transform: translate(600px, -320px);
+        font-size: 40px;
+    }
+}
+@media (max-width: 1024px) {
+
+    #gallery_heading{
+        transform: translate(450px,-350px);
+    }
+}
+
 /* Contact */
 
 #contact{
@@ -1230,6 +1523,43 @@ header>nav>a:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+/**  Contact page responsive **/
+
+@media (max-width: 1440px) {
+
+    #contact_content {
+        transform: translate(50px, 100px);
+    }
+
+    #info2 {
+        transform: translate(110px, -10px);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    #contact_details{
+        transform: translateX(-120px);
+    }
+    #message_form{
+        height: 470px;
+        width: 350px;
+        left: 50px;
+        transform: translateY(30px);
+    }
+    #submit_btn{
+        margin-left: 120px;
+        margin-top: 5px;
+    }
+    .labels,
+    .fields,
+    #message_form>form>textarea{
+        margin-left: 40px;
+    }
+
+}
+
 /* footer */
 
 #line{
@@ -1252,7 +1582,6 @@ header>nav>a:hover{
 }
 #footer_links>a{
     margin: 10px;
-
 }
 #footer_links>a>img{
     transition-duration: 0.4s;
@@ -1261,101 +1590,46 @@ header>nav>a:hover{
 #footer_links>a>img:hover{
     transform: scale(1.5);
 }
-/*footer{*/
-/*    background: #1d1c1c;*/
-/*    !*height: 80px;*!*/
-/*    width: 100vw;*/
-/*    border: 1px solid #1d1c1c;*/
-/*    border-top-color: white;*/
-/*}*/
 
-/*#footer_logo{*/
-/*    display: flex;*/
-/*    transform: translate(80px,30px);*/
-/*}*/
-/*#footer_ribbon{*/
-/*    transform: translate(40vw,-7px);*/
-/*    color: white;*/
-/*    font-size: 20px;*/
-/*}*/
-/*.icons{*/
-/*    transform: translate(78vw,-40px);*/
-/*    margin: 0px 9px;*/
-/*}*/
+/**  Footer section responsive **/
 
-@media all and (max-width: 1440px) {
+@media (max-width: 1440px) {
 
-    #home{
-        height: 801px;
+    #line{
+        transform: translate(30px,140px);
+        width: 75vw;
     }
-    #social_links>a{
-        transform: translateX(60px);
+    #footer_logo{
+        transform: translate(190px,150px);
     }
-    #about{
-        height: 801px;
+    #footer_links{
+        transform: translate(1100px,80px);
     }
-    #rec1{
-        transform: translateY(60px);
-    }
-    #name_tag{
-        transform: translate(300px,15px);
-    }
-    #info{
-        font-size: 22px;
-        transform: translateY(40px);
-    }
-    #about_para{
-        font-size: 21px;
-        transform: translateY(20px);
+    #footer_ribbon{
+        transform: translate(570px,110px);
     }
 }
-@media all and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
-    #home{
-        height: 801px;
+    #line{
+        transform: translate(-5px,150px);
+        width: 87vw;
     }
-    #circle1{
-        height: 320px;
-        width: 320px;
-        transform: translateX(-15px);
+    #footer_logo{
+        transform: translate(40px,170px);
     }
-    #circle2{
-        height: 300px;
-        width: 300px;
-        transform: translateX(-10px);
+    #footer_ribbon{
+        transform: translate(300px,130px);
     }
-    #my_image{
-        height: 340px;
-        transform: translate(17px,-41px);
+    #footer_links{
+        transform: translate(750px,100px);
     }
-    #circle3{
-        height: 55px;
-        width: 60px;
-        transform: translate(110px,-13px);
-    }
-    #circle4{
-        height: 40px;
-        width: 40px;
-        transform: translate(-5px,-320px);
-    }
-    #social_links>a{
-        margin: 20px 0px;
-        transform: translateX(20px);
-    }
-    #home_hd2{
-        font-size: 45px;
-    }
-    #home_hd3{
-        font-size: 30px;
-    }
-    #circle5{
-        transform: translate(-140px,-500px);
-    }
-    #circle6{
-        transform: translate(-200px,-90px);
+    #footer{
+        transform: translateY(50px);
     }
 }
-@media all and (max-width: 768px){
+
+@media (max-width: 768px){
     header>nav>a{
         color: transparent;
         width: 760px;
