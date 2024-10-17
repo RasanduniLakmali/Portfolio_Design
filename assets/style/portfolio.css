@@ -401,6 +401,12 @@ header>nav>a.active{
         transform: translate(-10px,-150px);
     }
 }
+@media (max-width: 500px) {
+
+    #social_links{
+        display: none;
+    }
+}
 /*about section */
 
 #about{
@@ -659,6 +665,19 @@ header>nav>a.active{
     }
     #name_tag{
         transform: translate(230px,8px);
+    }
+}
+@media (max-width: 375px) {
+
+    #about_para{
+        font-size: 12px;
+        transform: translateX(40px);
+    }
+    #about_headings{
+        transform: translate(40px,30px);
+    }
+    #name_tag{
+        font-size: 25px;
     }
 }
 /* education */
@@ -1261,6 +1280,36 @@ header>nav>a.active{
         left: 28vw;
     }
 }
+@media (max-width: 375px) {
+
+    #service_logo{
+        display: none;
+    }
+    #hex2,
+    #hex4,
+    #hex6{
+        left: 550px;
+    }
+    #back_end_img,
+    #web_img,
+    #app_img{
+        left: 520px;
+    }
+    #service2,
+    #service3,
+    #service4{
+        left: 505px;
+    }
+    #service3{
+        left: 520px;
+    }
+    #service_heading2{
+        left: 17vw;
+    }
+    #service_heading1{
+        left: 35vw;
+    }
+}
 /* projects */
 
 #projects{
@@ -1511,7 +1560,24 @@ header>nav>a.active{
     /*    left: 230px;*/
     /*    top: 323px;*/
     /*}*/
+}
+@media (max-width: 375px) {
 
+     #project_content{
+         transform: translateX(-15px);
+     }
+    .githubButtons{
+        width: 100px;
+        font-size: 12px;
+    }
+    #date1,
+    #date2{
+        left: 350px;
+        top: 100px;
+    }
+    #project_heading2{
+        left: 80px;
+    }
 }
 
 /* Assignments */
@@ -1657,7 +1723,6 @@ header>nav>a.active{
     #assignment_content>div {
         height: 190px;
         width: 200px;
-
     }
     #assignment_content{
         grid-template-columns: repeat(1,1fr);
@@ -1686,6 +1751,37 @@ header>nav>a.active{
         display: none;
     }
 }
+@media (max-width: 375px) {
+
+    #assignment_content>div>img{
+        height: 50px;
+        position: relative;
+        left: 10px;
+    }
+    #assignment_content>div>h5{
+        font-size: 18px;
+    }
+    #assignment_content>div{
+        height: 170px;
+    }
+    #assignment_content>div:nth-child(4),
+    #assignment_content>div:nth-child(5),
+    #assignment_content>div:nth-child(6),
+    #assignment_content>div:nth-child(7),
+    #assignment_content>div:nth-child(8){
+        display: none;
+    }
+    #assignment_content>div:first-child,
+    #assignment_content>div:nth-child(2),
+    #assignment_content>div:nth-child(3){
+        transform: translate(200px,10px);
+    }
+    #viewBtn_rec1{
+        left: 100px;
+        top: 715px;
+    }
+}
+
 /* skills */
 
 #skills{
@@ -2027,6 +2123,33 @@ header>nav>a.active{
         font-size: 10px;
     }
 }
+@media (max-width: 375px) {
+
+    #skill_rec1 {
+        left: 35px;
+    }
+    #skill_content{
+        transform: translate(-123px,-20px);
+    }
+    #achievements{
+        display: block;
+    }
+    #achievements>div:nth-child(2)>p{
+        transform: translate(70px,55px);
+    }
+    #achievements>div:nth-child(2)>img{
+        transform: translate(70px,50px);
+        height: 130px;
+    }
+    #achievements>div:first-child>p{
+        transform: translate(90px,45px);
+    }
+    #achievements>div:first-child>img{
+        height: 130px;
+        transform: translate(90px,45px);
+    }
+}
+
 /* Gallery */
 
 #gallery {
@@ -2442,6 +2565,49 @@ header>nav>a.active{
         transform: translateX(330px);
     }
 }
+@media (max-width: 375px) {
+
+    #message_form{
+        height: 340px;
+        width: 200px;
+        left: -180px;
+        top: 110px;
+    }
+    #message_form_heading{
+        font-size: 20px;
+        transform: translate(50px,-10px);
+    }
+    .labels{
+
+        /*transform: translateY(-50px);*/
+    }
+    .fields{
+        width: 120px;
+        transform: translateY(-10px);
+    }
+    #message_form>form>textarea{
+        width: 120px;
+        height: 20px;
+        transform: translateY(-10px);
+    }
+    #submit_btn{
+        margin-top: -10px;
+        margin-left: 45px;
+    }
+    #contact_details>div:first-child>h4{
+        transform: translate(240px,-40px);
+    }
+    #contact_details>div:first-child>p{
+        transform: translate(290px, -60px);
+    }
+    #info2>div>img{
+        transform: translateX(260px);
+    }
+    #contact_heading{
+        left: 37vw;
+    }
+}
+
 /* footer */
 
 #line{
@@ -2548,4 +2714,9 @@ header>nav>a.active{
         height: 20px;
     }
 }
+@media (max-width: 375px) {
 
+    #footer_links{
+        transform: translate(100px,210px);
+    }
+}
