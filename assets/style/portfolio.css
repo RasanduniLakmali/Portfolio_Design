@@ -51,6 +51,56 @@ header>nav>a:hover{
     color: #06EA53;
     transition-duration: 1s;
 }
+header>nav>a.active{
+    color: #06EA53;
+}
+#menu_icon{
+    font-size: 3.4rem;
+    color: #06EA53;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: -2px;
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    #menu_icon{
+        display: block;
+    }
+    #navbar{
+        position: absolute;
+        top: 100%;
+        left: -200%;
+        width: 100%;
+        padding: 0.5rem 4%;
+        background: black;
+        box-shadow: 2px 0px 10px 5px #525283;
+        color: white;
+        transition: .25s ease;
+        transition-delay: .20s;
+    }
+    #navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+    #navbar.active{
+        left: 0;
+        transition-delay: 0s;
+    }
+    #navbar.active a{
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+}
+
+/* Home section */
+
 #home{
     height: 100vh;
     width: 100vw;
@@ -231,6 +281,84 @@ header>nav>a:hover{
         transform: translate(-200px,-90px);
     }
 }
+@media (max-width: 768px){
+
+    #home {
+        grid-template-columns: repeat(1, 1fr);
+        /*height: 801px;*/
+    }
+    .heading{
+        transform: translateY(400px);
+
+    }
+    #circle1{
+        height: 320px;
+        width: 320px;
+        transform: translate(-10px,-240px);
+    }
+    #circle2{
+        height: 300px;
+        width: 300px;
+        transform: translateX(-10px);
+    }
+    #circle3{
+        height: 50px;
+        width: 50px;
+        transform: translate(113px,-14px);
+    }
+    #circle4{
+        height: 40px;
+        aspect-ratio: 1/1;
+        transform: translate(-6px,-300px);
+    }
+    #my_image{
+        height: 330px;
+        transform: translate(18px,-41px);
+    }
+    #btn1{
+        transform: translate(100px,490px);
+        width: 100px;
+    }
+    #first_word{
+        position: absolute;
+        left: 80px;
+        top: -390px;
+    }
+    #second_word{
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        font-size: 30px;
+    }
+    #home_hd2{
+        font-size: 35px;
+        transform: translate(-15px,490px);
+    }
+    #home_hd3{
+        font-size: 27px;
+        transform: translate(-10px,500px);
+    }
+    #social_links>a{
+        transform: translate(55px,-240px);
+
+    }
+    #social_links>a>img{
+        height: 37px;
+    }
+    #social_links>a:hover{
+        padding: 2px;
+    }
+    .blur_circles{
+        height: 40px;
+        width: 40px;
+    }
+    #circle5{
+        transform: translate(410px,50px);
+    }
+    #circle6{
+        transform: translate(-100px,-250px);
+    }
+}
 
 /*about section */
 
@@ -377,6 +505,50 @@ header>nav>a:hover{
         transform: translateX(-30px);
     }
 }
+@media (max-width: 768px) {
+
+    #about_heading2{
+        font-size: 35px;
+    }
+    #about_headings{
+        transform: translate(140px,120px);
+    }
+    #square>div{
+        width: 240px;
+        height: 270px;
+    }
+    #about_img{
+        height: 290px;
+        transform: translate(-40px,-20px);
+    }
+    #square{
+        width: 240px;
+        height: 255px;
+    }
+    #about_para{
+        font-size: 18px;
+        transform: translate(-170px,200px);
+    }
+    #image_section{
+        transform: translate(-80px,-90px);
+    }
+    #rec1{
+        width: 200px;
+        transform: translate(-160px,180px);
+    }
+    #rec2{
+        width: 130px;
+    }
+    #rec2>h6{
+        transform: translate(10px,10px);
+    }
+    #name_tag{
+        transform: translate(100px,130px);
+    }
+    #info{
+        transform: translate(-170px,200px);
+    }
+}
 /* education */
 
 #education{
@@ -521,6 +693,63 @@ header>nav>a:hover{
         height: 200px;
         width: 300px;
         transform: translate(-100px,45px);
+    }
+}
+@media (max-width: 768px) {
+
+    #first_yr{
+        top: -40px;
+    }
+    #second_yr{
+        top: -210px;
+    }
+    #heading1{
+        top: 10px;
+    }
+    #heading2{
+        top: -160px;
+    }
+    .exm_heading{
+        font-size: 17px;
+    }
+    #para1{
+        transform: translate(80px,20px);
+    }
+    #para2{
+        transform: translate(600px,-150px);
+    }
+    #third_yr{
+        top: -90px;
+    }
+    #fourth_yr{
+        top: -290px;
+    }
+    #heading3{
+        top: -40px;
+    }
+    #heading4{
+        top: -240px;
+    }
+    #para3{
+        top: -50px;
+    }
+    #para4{
+        transform: translate(600px,-230px);
+    }
+    #edu_img_rec{
+        height: 150px;
+        width: 150px;
+    }
+    #edu_img_section{
+        transform: translate(-440px,240px);
+    }
+    #edu_img{
+        height: 150px;
+        width: 250px;
+        transform: translate(-70px,-5px);
+    }
+    #edu_heading{
+        left: 35vw;
     }
 }
 
@@ -739,7 +968,41 @@ header>nav>a:hover{
         left: 38vw;
     }
 }
+@media (max-width: 768px) {
 
+    #service_content {
+        transform: translate(-290px, -50px);
+    }
+    #hex2{
+        left: 800px;
+    }
+    #back_end_img,
+    #app_img{
+        left: 770px;
+    }
+    #service2,
+    #service4{
+        left: 750px;
+    }
+    #hex4{
+        left: 930px;
+    }
+    #web_img{
+        left: 900px;
+    }
+    #service3{
+        left: 910px;
+    }
+    #service_logo{
+        left: 515px;
+    }
+    #hex5{
+        left: 800px;
+    }
+    #service_heading2{
+        left: 35vw;
+    }
+}
 /* projects */
 
 #projects{
@@ -788,15 +1051,11 @@ header>nav>a:hover{
     transform: translateY(-10px)scale(1.03);
     box-shadow: 0px 0px 20px #06EA53;
 }
-#connect4_img1{
-    height: 100px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
+
 #connect4_img2{
-    height: 100px;
-    margin-left: 130px;
-    margin-top: -15px;
+    height: 200px;
+    margin-left: -30px;
+    margin-top: -6px;
 }
 .project_headings{
     font-family: "Salsa", cursive;
@@ -822,11 +1081,9 @@ header>nav>a:hover{
     font-family: "Kavoon", serif;
     font-weight: 400;
     font-style: normal;
-}
-#githubBtn1{
     top: 360px;
-
 }
+
 #date1{
     font-family: "Kavoon", serif;
     font-weight: 400;
@@ -847,9 +1104,7 @@ header>nav>a:hover{
    left: 20px;
     top: 170px;
 }
-#githubBtn2{
-    top: 360px;
-}
+
 #date2{
     font-family: "Kavoon", serif;
     font-weight: 400;
@@ -878,9 +1133,7 @@ header>nav>a:hover{
     left: 10px;
     top: 170px;
 }
-#githubBtn3{
-    top: 360px;
-}
+
 #date3{
     font-family: "Kavoon", serif;
     font-weight: 400;
@@ -901,6 +1154,62 @@ header>nav>a:hover{
     }
     #project_heading2{
         left: 37vw;
+    }
+}
+@media (max-width: 768px) {
+
+    #project_content>div{
+        height: 220px;
+        width: 200px;
+    }
+    #connect4_img2{
+        height: 130px;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+    #stock_img{
+        height: 100px;
+        width: 100px;
+        left: 50px;
+        top: 15px;
+    }
+    #project3_img1{
+        height: 80px;
+        left: 70px;
+    }
+    .project_headings{
+        font-size: 20px;
+    }
+    #project1_heading{
+        left: 20px;
+        top: 120px;
+    }
+    #project2_heading{
+        left: 15px;
+        top: 120px;
+    }
+    #project3_heading{
+        left: 30px;
+        top: 100px;
+    }
+    .githubButtons{
+        top: 270px;
+        left: 30px;
+    }
+    .date_circles{
+        left: 50px;
+        top: 350px;
+    }
+    .dates{
+        display: inline-flex;
+        margin-left: -120px;
+        margin-top: -25px;
+    }
+    #project_heading1{
+        left: 40vw;
+    }
+    #project_heading2{
+        left: 27vw;
     }
 }
 
@@ -1032,7 +1341,16 @@ header>nav>a:hover{
         left: 750px;
     }
 }
+@media (max-width: 768px) {
 
+    #assignments_heading{
+        font-size: 27px;
+        left: 37vw;
+    }
+    #viewBtn_rec1{
+        left: 550px;
+    }
+}
 /* skills */
 
 #skills{
@@ -1234,7 +1552,89 @@ header>nav>a:hover{
 
     }
 }
+@media (max-width: 768px) {
 
+    #skill_rec1{
+        width: 530px;
+        height: 90px;
+        left: 130px;
+    }
+    #skill_para{
+        font-size: 12px;
+    }
+    #skill_rec5{
+        left: 470px;
+        top: 100px;
+    }
+    #skill_rec6{
+        left: 540px;
+        top: 35px;
+    }
+    #skill_content>div {
+        height: 210px;
+        width: 100px;
+    }
+    .circular-progress{
+        left: 6px;
+    }
+    #skill_content{
+        transform: translate(-80px,-40px);
+    }
+    .circular-progress{
+        width: 80px;
+        height: 80px;
+        left: 10px;
+        top: 45px;
+    }
+    .circular-progress:before {
+        height: 60px;
+        width: 60px;
+    }
+    .value-container{
+        left: 20px;
+        top: 30px;
+    }
+    #progress5{
+        top: 55px;
+    }
+    #skill1>img{
+        transform: translate(10px,20px);
+    }
+    #skill2>img{
+        transform: translate(20px,20px);
+    }
+    #skill3>img{
+        transform: translate(-2px,20px);
+    }
+    #skill4>img{
+        height: 40px;
+        transform: translate(10px,20px);
+    }
+    #skill5>img{
+        transform: translate(25px,25px);
+    }
+    #skill6>img{
+        transform: translate(25px,25px);
+    }
+    #progress4{
+        top: 65px;
+    }
+    #achievements{
+        width: 100vw;
+        transform: translate(30px,190px);
+    }
+
+    #achievements>div>img{
+        width: 300px;
+    }
+    #achievements>div:nth-child(2){
+        transform: translateX(-10px);
+    }
+    #skill_heading{
+        left: 25vw;
+        top: -10px;
+    }
+}
 /* Gallery */
 
 #gallery {
@@ -1258,7 +1658,7 @@ header>nav>a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .imgContainer{
@@ -1394,6 +1794,12 @@ header>nav>a:hover{
 
     #gallery_heading{
         transform: translate(450px,-350px);
+    }
+}
+@media (max-width: 768px) {
+
+    #gallery_heading{
+        transform: translate(320px,-340px);
     }
 }
 
@@ -1559,6 +1965,50 @@ header>nav>a:hover{
     }
 
 }
+@media (max-width: 768px) {
+
+    #contact_heading{
+        font-size: 30px;
+        top: -10px;
+        left: 42vw;
+    }
+    #contact_details>div:first-child>h4{
+        font-size: 25px;
+        transform: translate(110px,-10px);
+    }
+    #contact_details>div:first-child>p{
+        font-size: 14px;
+        transform: translate(110px,-10px);
+    }
+    #message_form{
+        height: 400px;
+        width: 300px;
+        left: -10px;
+        top: -30px;
+    }
+    #message_form_heading{
+        font-size: 25px;
+        transform: translate(80px,-10px);
+    }
+    .labels{
+        font-size: 15px;
+        transform: translateY(-30px);
+    }
+    .fields{
+        width: 200px;
+    }
+    #message_form>form>textarea{
+        width: 200px;
+        height: 40px;
+    }
+    #submit_btn{
+        margin-top: 5px;
+        margin-left: 100px;
+    }
+    #info2{
+        transform: translate(80px,30px);
+    }
+}
 
 /* footer */
 
@@ -1628,86 +2078,22 @@ header>nav>a:hover{
         transform: translateY(50px);
     }
 }
+@media (max-width: 768px) {
 
-@media (max-width: 768px){
-    header>nav>a{
-        color: transparent;
-        width: 760px;
-    }
-    #home {
-        grid-template-columns: repeat(1, 1fr);
-        /*height: 801px;*/
-    }
-    .heading{
-        transform: translateY(400px);
-
-    }
-    #circle1{
-        height: 320px;
-        width: 320px;
-        transform: translate(-10px,-240px);
-    }
-    #circle2{
-        height: 300px;
-        width: 300px;
-        transform: translateX(-10px);
-    }
-    #circle3{
-        height: 50px;
-        width: 50px;
-        transform: translate(113px,-14px);
-    }
-    #circle4{
+    #footer_logo{
         height: 40px;
-        aspect-ratio: 1/1;
-        transform: translate(-6px,-300px);
+        transform: translate(20px,180px);
     }
-    #my_image{
-        height: 330px;
-        transform: translate(18px,-41px);
+    #footer_ribbon{
+        font-size: 16px;
+        transform: translate(200px,150px);
     }
-    #btn1{
-        transform: translate(100px,490px);
-        width: 100px;
+    #footer_links{
+        transform: translate(535px,120px);
     }
-    #first_word{
-        position: absolute;
-        left: 80px;
-        top: -390px;
-    }
-    #second_word{
-        position: absolute;
-        left: 100px;
-        top: 70px;
-        font-size: 30px;
-    }
-    #home_hd2{
-        font-size: 35px;
-        transform: translate(-15px,490px);
-    }
-    #home_hd3{
-        font-size: 27px;
-        transform: translate(-10px,500px);
-    }
-    #social_links>a{
-        transform: translate(55px,-240px);
-
-    }
-    #social_links>a>img{
-        height: 37px;
-    }
-    #social_links>a:hover{
-        padding: 2px;
-    }
-    .blur_circles{
-        height: 40px;
-        width: 40px;
-    }
-    #circle5{
-        transform: translate(410px,50px);
-    }
-    #circle6{
-        transform: translate(-100px,-250px);
+    #footer_links>a{
+        margin: 7px;
     }
 }
+
 

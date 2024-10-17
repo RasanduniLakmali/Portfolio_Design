@@ -53,6 +53,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inder&family=Kavoon&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 <!-- header section -->
@@ -62,9 +64,13 @@
         <img src="/assets/images/my_logo.png" align="top" alt="This is my logo" class="logo">
 
     </div>
+
+    <div class='bx bx-menu' id="menu_icon"></div>
+
     <!--heading section-->
-    <nav>
-        <a href="#home">Home</a>
+
+    <nav id="navbar">
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
@@ -144,7 +150,7 @@
         <!-- About content -->
         <section id="right">
 
-            <div>
+            <div id="about_headings">
 
                 <b><h5 id="about_heading">About me</h5></b>
                 <h2 id="about_heading2">Who is <span class="name">Rasanduni<br>Lakmali?</span></h2>
@@ -306,9 +312,8 @@
 
             <!-- Project 1 -->
                <div id="project1">
-                <img src="assets/images/connect4_img.png" alt="connect4 game image" id="connect4_img1">
-                <img src="assets/images/connect4_img2.png" alt="connect4 game image" id="connect4_img2">
-                <div><span><input type="button" value="View in Github" id="githubBtn1" class="githubButtons"></span><span id="date1">18 Mar 2024</span></div>
+                   <img src="assets/images/connect4_img2.png" alt="connect4 game image" id="connect4_img2">
+                <div><span><input type="button" value="View in Github" id="githubBtn1" class="githubButtons"></span><span id="date1" class="dates">18 Mar 2024</span></div>
                 <div class="date_circles"></div>
                 <h4 id="project1_heading" class="project_headings">Connect 4 Game</h4>
             </div>
@@ -317,7 +322,7 @@
             <div>
                 <img src="assets/images/stock_img.jpg" alt="stock_management image" id="stock_img">
                 <h4 id="project2_heading" class="project_headings">Stock Management<br>System</h4>
-                <div><span><input type="button" value="View in Github" id="githubBtn2" class="githubButtons"></span><span id="date2">03 Dec 2023</span></div>
+                <div><span><input type="button" value="View in Github" id="githubBtn2" class="githubButtons"></span><span id="date2" class="dates">03 Dec 2023</span></div>
                 <div class="date_circles"></div>
             </div>
 
@@ -325,7 +330,7 @@
             <div>
                  <img src="assets/images/project3_img1.png" alt="logo_of_company" id="project3_img1">
                 <h4 id="project3_heading" class="project_headings">Factory<br>Management System</h4>
-                <div><span><input type="button" value="View in Github" id="githubBtn3" class="githubButtons"></span><span id="date3">27 May 2024</span></div>
+                <div><span><input type="button" value="View in Github" id="githubBtn3" class="githubButtons"></span><span id="date3" class="dates">27 May 2024</span></div>
                 <div class="date_circles"></div>
             </div>
         </section>

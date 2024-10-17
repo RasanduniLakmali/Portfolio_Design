@@ -111,3 +111,11 @@ let progress6 = setInterval(() => {
         clearInterval(progress6);
     }
 }, speed6);
+
+let menuIcon = document.querySelector('#menu_icon');
+let navBar = document.querySelector('#navbar');
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navBar.classList.toggle('active');
+}
