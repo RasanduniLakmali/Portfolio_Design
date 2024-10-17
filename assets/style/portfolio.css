@@ -384,11 +384,8 @@ header>nav>a.active{
         top: -40px;
     }
     #social_links>a{
-        display: inline-block;
-        position: relative;
-        left: -20px;
-        top: 430px;
-        margin-left: -120px;
+        transform: translate(-200px,240px);
+
     }
     .blur_circles{
         height: 40px;
@@ -401,12 +398,40 @@ header>nav>a.active{
         transform: translate(-10px,-150px);
     }
 }
+@media (max-width: 320px) {
+
+    #circle1{
+        width: 300px;
+        transform: translate(-6px,-260px);
+    }
+    #circle2{
+        width: 280px;
+    }
+    #home_hd3{
+        font-size: 20px;
+        transform: translate(-10px,450px);
+    }
+    #home_hd2{
+        font-size: 25px;
+        transform: translate(-9px,465px);
+    }
+    #home_hd1{
+        left: -20px;
+    }
+    #btn1{
+        transform: translate(60px,490px);
+    }
+    #social_links>a{
+       transform: translate(500px,00px);
+    }
+}
 @media (max-width: 500px) {
 
     #social_links{
         display: none;
     }
 }
+
 /*about section */
 
 #about{
@@ -680,6 +705,22 @@ header>nav>a.active{
         font-size: 25px;
     }
 }
+@media (max-width: 320px) {
+
+    #image_section{
+        transform: translate(-70px,-150px);
+    }
+    #about_para{
+        font-size: 10px;
+    }
+    #name_tag{
+        transform: translate(100px,55px);
+    }
+    #rec1{
+        transform: translate(90px,30px);
+    }
+}
+
 /* education */
 
 #education{
@@ -927,6 +968,15 @@ header>nav>a.active{
     #heading2{
         left: 520px;
         /*top: -110px;*/
+    }
+}
+@media (max-width: 320px) {
+
+    .para{
+        font-size: 12px;
+    }
+    #edu_content{
+        transform: translateX(-10px);
     }
 }
 
@@ -1310,6 +1360,28 @@ header>nav>a.active{
         left: 35vw;
     }
 }
+@media (max-width: 320px) {
+
+    #hex2,
+    #hex4,
+    #hex6{
+        left: 525px;
+    }
+    #back_end_img,
+    #web_img,
+    #app_img{
+        left: 500px;
+    }
+    #service2,
+    #service3,
+    #service4{
+        left: 480px;
+    }
+    #service3{
+        left: 500px;
+    }
+
+}
 /* projects */
 
 #projects{
@@ -1579,7 +1651,28 @@ header>nav>a.active{
         left: 80px;
     }
 }
+@media (max-width: 320px) {
 
+    #project_heading2{
+        left: 20vw;
+        font-size: 18px;
+    }
+    #project_content>div{
+        height: 200px;
+        width: 200px;
+        top: -120px;
+        margin: 40px;
+    }
+    .githubButtons{
+        top: 220px;
+        left: -10px;
+    }
+    #date1,
+    #date2{
+        left: 240px;
+        top: 250px;
+    }
+}
 /* Assignments */
 
 #assignments{
@@ -2149,6 +2242,41 @@ header>nav>a.active{
         transform: translate(90px,45px);
     }
 }
+@media (max-width: 320px) {
+
+    #skill_heading{
+        font-size: 17px;
+        left: 20vw;
+    }
+    #skill_rec1 {
+        height: 120px;
+        width: 250px;
+        left: 60px;
+        top: 110px;
+    }
+    #skill_para{
+        font-size: 10px;
+    }
+    #skill_rec1 {
+        left: 30px;
+    }
+    #skill_rec5{
+        left: 190px;
+        top: 130px;
+    }
+    #skill_rec6{
+        left: 260px;
+        top: 55px;
+    }
+    #skill3{
+        display: none;
+    }
+    #skill1,
+    #skill2{
+        margin-left: 35px;
+        margin-top: -20px;
+    }
+}
 
 /* Gallery */
 
@@ -2327,6 +2455,14 @@ header>nav>a.active{
         height: 340px;
         width: 200px;
     }
+}
+@media (max-width: 320px) {
+
+    #gallery_heading{
+        font-size: 25px;
+        transform: translate(120px,-340px);
+    }
+
 }
 /* Contact */
 
@@ -2607,7 +2743,19 @@ header>nav>a.active{
         left: 37vw;
     }
 }
+@media (max-width: 320px) {
 
+    #message_form{
+        left: -130px;
+        top: 120px;
+    }
+    #contact_details>div:first-child>p{
+        font-size: 10px;
+    }
+    #info2>div>img{
+        transform: translateX(230px);
+    }
+}
 /* footer */
 
 #line{
@@ -2717,6 +2865,20 @@ header>nav>a.active{
 @media (max-width: 375px) {
 
     #footer_links{
+        transform: translate(100px,210px);
+    }
+}
+@media (max-width: 320px) {
+
+    #footer_ribbon{
+        font-size: 10px;
+        transform: translate(50px,220px);
+    }
+    #footer_links{
+        transform: translate(80px,230px);
+    }
+    #footer_logo{
+        height: 30px;
         transform: translate(100px,210px);
     }
 }
