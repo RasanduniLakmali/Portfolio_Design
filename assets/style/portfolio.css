@@ -359,7 +359,48 @@ header>nav>a.active{
         transform: translate(-100px,-250px);
     }
 }
+@media (max-width: 425px) {
 
+     #circle1{
+         transform: translate(-8px,-260px);
+     }
+    #home_hd1{
+        font-size: 40px;
+        position: relative;
+        left: 35px;
+    }
+    #home_hd2{
+        font-size: 30px;
+        transform: translate(20px,465px);
+    }
+    #second_word{
+        transform: translate(6px,-20px);
+    }
+    #home_hd3{
+        transform: translate(5px,460px);
+    }
+    #btn1{
+        position: relative;
+        top: -40px;
+    }
+    #social_links>a{
+        display: inline-block;
+        position: relative;
+        left: -20px;
+        top: 430px;
+        margin-left: -120px;
+    }
+    .blur_circles{
+        height: 40px;
+        width: 40px;
+    }
+    #circle5{
+        transform: translate(320px,60px);
+    }
+    #circle6{
+        transform: translate(-10px,-150px);
+    }
+}
 /*about section */
 
 #about{
@@ -549,11 +590,84 @@ header>nav>a.active{
         transform: translate(-170px,200px);
     }
 }
+@media (max-width: 425px) {
+
+    #about{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #square>div{
+        width: 180px;
+        height: 200px;
+    }
+    #about_img{
+        height: 230px;
+        transform: translate(-40px,-30px);
+    }
+    #square{
+        width: 170px;
+        height: 180px;
+    }
+    #image_section{
+        transform: translate(-20px,-150px);
+    }
+    #about_heading{
+        font-size: 20px;
+    }
+    #about_heading2{
+        font-size: 30px;
+        transform: translateY(-20px);
+    }
+    #about_headings{
+        transform: translate(50px,20px);
+    }
+    #about_para{
+        font-size: 13px;
+        transform: translate(50px,-10px);
+    }
+    #info{
+        display: block;
+        font-size: 17px;
+        transform: translate(45px,-20px);
+    }
+    #address,
+    #my_email{
+        transform: translateX(1px);
+    }
+    #info>div{
+        margin: 10px;
+    }
+    #rec1{
+        width: 160px;
+        height: 40px;
+        transform: translate(50px,40px);
+    }
+    #rec2{
+        width: 90px;
+        height: 40px;
+    }
+    #circle{
+        width: 30px;
+        height: 30px;
+        transform: translate(14px,-37px);
+    }
+    #arrow{
+        width: 20px;
+    }
+    #rec2>h6{
+        font-size: 14px;
+        transform: translate(5px,10px);
+    }
+    #name_tag{
+        transform: translate(230px,8px);
+    }
+}
 /* education */
 
 #education{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
+    /*height: 80vh;*/
+    /*width: 100vw;*/
     background-color: #434242;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -752,6 +866,50 @@ header>nav>a.active{
         left: 35vw;
     }
 }
+@media (max-width: 425px) {
+
+    #education{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    #edu_img_section{
+        display: none;
+    }
+    #edu_heading{
+        font-size: 20px;
+    }
+    .exm_heading{
+        font-size: 15px;
+    }
+
+    #fourth_year{
+        transform: translate(-500px,350px);
+    }
+    #fourth_year{
+        transform: translate(-565px,440px);
+    }
+    #second_year{
+        transform: translate(-565px,420px);
+    }
+    #first_yr{
+        top: -20px;
+        left: 80px;
+    }
+    #heading1{
+        top: 20px;
+    }
+    .para{
+        font-size: 13px;
+    }
+    #heading3{
+        top: -50px;
+        left: -53px;
+    }
+    #heading2{
+        left: 520px;
+        /*top: -110px;*/
+    }
+}
 
 /* Services */
 
@@ -806,19 +964,15 @@ header>nav>a.active{
 .hexagon::before{
     transform: rotate(-60deg);
 }
-
 #hex1{
     position: absolute;
     left: 550px;
     top: 290px;
-
 }
-
 #hex2{
     position: absolute;
     left: 900px;
     top: 290px;
-
 }
 #hex3{
     position: absolute;
@@ -1003,6 +1157,110 @@ header>nav>a.active{
         left: 35vw;
     }
 }
+@media (max-width: 425px) {
+
+    .hexagon{
+        width: 120px;
+        height: 70px;
+    }
+    .hexagon::after,
+    .hexagon::before{
+        width: 100%;
+        height: 100%;
+    }
+    #hex1{
+        left: 380px;
+        top: 290px;
+    }
+    #front_end_img{
+        left: 360px;
+        top: 235px;
+    }
+    #service1{
+        top: 255px;
+        left: 330px;
+    }
+    #hex2{
+        left: 630px;
+        top: 290px;
+    }
+    #back_end_img{
+
+        left: 600px;
+        top: 225px;
+    }
+    #service2{
+        left: 580px;
+        top: 250px;
+    }
+    #hex3{
+        left: 380px;
+        top: 500px;
+    }
+    #db_img{
+        height: 40px;
+        left: 360px;
+        top: 440px;
+    }
+    #service6{
+        left: 330px;
+        top: 460px;
+    }
+    #service_logo{
+        height: 150px;
+        left: 430px;
+        top: 450px;
+    }
+    #hex4{
+        left: 630px;
+        top: 500px;
+    }
+    #web_img{
+        left: 600px;
+        top: 440px;
+    }
+    #service3{
+        left: 600px;
+        top: 470px;
+    }
+    #hex5{
+        left: 380px;
+        top: 720px;
+    }
+    #pro_img{
+        height: 40px;
+        left: 360px;
+        top: 665px;
+    }
+    #service5{
+        font-size: 16px;
+        left: 330px;
+        top: 680px;
+    }
+    #hex6{
+        left: 630px;
+        top: 720px;
+    }
+    #app_img{
+        height: 50px;
+        left: 605px;
+        top: 660px;
+    }
+    #service4{
+        left: 580px;
+        top: 690px;
+    }
+    #service_heading1{
+        top: 7px;
+        font-size: 25px;
+        left: 43vw;
+    }
+    #service_heading2{
+        top: 50px;
+        font-size: 27px;
+        left: 28vw;
+    }
+}
 /* projects */
 
 #projects{
@@ -1034,7 +1292,6 @@ header>nav>a.active{
     padding-left: 130px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-
 }
 #project_content>div{
     position: relative;
@@ -1083,7 +1340,6 @@ header>nav>a.active{
     font-style: normal;
     top: 360px;
 }
-
 #date1{
     font-family: "Kavoon", serif;
     font-weight: 400;
@@ -1104,7 +1360,6 @@ header>nav>a.active{
    left: 20px;
     top: 170px;
 }
-
 #date2{
     font-family: "Kavoon", serif;
     font-weight: 400;
@@ -1211,6 +1466,52 @@ header>nav>a.active{
     #project_heading2{
         left: 27vw;
     }
+}
+@media (max-width: 425px) {
+
+    #project_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #project_heading1,
+    #project_heading2{
+        font-size: 20px;
+
+    }
+    #project_heading1{
+        top: -10px;
+    }
+    #project_heading2{
+        top: 20px;
+    }
+    #project3{
+        display: none;
+    }
+    #project_content>div{
+        top: -60px;
+        margin: 10px;
+    }
+    .githubButtons {
+        height: 40px;
+        width: 120px;
+        top: 20px;
+        left: 220px;
+        font-size: 15px;
+    }
+    #date1,
+    #date2{
+        left: 370px;
+        top: 100px;
+    }
+    .dates{
+        display: inline-flex;
+        margin-right: -220px;
+        margin-top: -25px;
+    }
+    /*.date_circles{*/
+    /*    left: 230px;*/
+    /*    top: 323px;*/
+    /*}*/
+
 }
 
 /* Assignments */
@@ -1349,6 +1650,40 @@ header>nav>a.active{
     }
     #viewBtn_rec1{
         left: 550px;
+    }
+}
+@media (max-width: 425px) {
+
+    #assignment_content>div {
+        height: 190px;
+        width: 200px;
+
+    }
+    #assignment_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    #assignments_heading{
+        font-size: 20px;
+        left: 33vw;
+    }
+    .viewButtons{
+        transform: translate(62px,-15px);
+    }
+    #assignment_content>div:first-child{
+        transform: translate(230px,10px);
+    }
+    #assignment_content>div:nth-child(2){
+        transform: translate(230px,10px);
+    }
+    #assignment_content>div:nth-child(3){
+        transform: translate(230px,10px);
+    }
+    #viewBtn_rec1{
+        left: 130px;
+        top: 745px;
+    }
+    #assignment_content>div:nth-child(8){
+        display: none;
     }
 }
 /* skills */
@@ -1635,6 +1970,63 @@ header>nav>a.active{
         top: -10px;
     }
 }
+@media (max-width: 425px) {
+
+    #skill_heading{
+        font-size: 20px;
+        top: 10px;
+        left: 22vw;
+    }
+    #skill_rec1 {
+        height: 140px;
+        width: 300px;
+        left: 60px;
+        top: 110px;
+    }
+    #skill_rec3,
+    #skill_rec5{
+        height: 5px;
+    }
+    #skill_rec4,
+    #skill_rec6{
+        width: 5px;
+    }
+    #skill_rec3,
+    #skill_rec4{
+        top: -15px;
+        left: -10px;
+    }
+    #skill_rec5{
+        left: 235px;
+        top: 150px;
+    }
+    #skill_rec6{
+        left: 310px;
+        top: 80px;
+    }
+    #skill4,
+    #skill5,
+    #skill6{
+        display: none;
+    }
+    #skill_content{
+        grid-template-columns: repeat(3,1fr);
+        transform: translate(-110px,-20px);
+    }
+    #achievements>div>img{
+        height: 150px;
+        width: 180px;
+    }
+    #achievements{
+        transform: translate(-10px,190px);
+    }
+    #achievements>div:nth-child(2){
+        transform: translate(20px,-5px);
+    }
+    #achievements>div>p{
+        font-size: 10px;
+    }
+}
 /* Gallery */
 
 #gallery {
@@ -1802,7 +2194,17 @@ header>nav>a.active{
         transform: translate(320px,-340px);
     }
 }
+@media (max-width: 425px) {
 
+    #gallery_heading{
+        font-size: 25px;
+        transform: translate(150px,-340px);
+    }
+    .img{
+        height: 340px;
+        width: 200px;
+    }
+}
 /* Contact */
 
 #contact{
@@ -2009,7 +2411,37 @@ header>nav>a.active{
         transform: translate(80px,30px);
     }
 }
+@media (max-width: 425px) {
 
+    #contact_heading{
+        font-size: 20px;
+        top: 10px;
+    }
+    #contact_details>div:first-child>h4{
+        display: inline-flex;
+        margin-left: -130px;
+        font-size: 20px;
+        transform: translate(290px,-40px);
+    }
+    #message_form{
+        height: 400px;
+        width: 300px;
+        left: -130px;
+        top: 110px;
+    }
+    #contact_details>div:first-child>p {
+        font-size: 12px;
+        margin-left: -180px;
+        text-align: left;
+        transform: translate(310px, -60px);
+    }
+    #info2>div>span{
+        display: none;
+    }
+    #info2>div>img{
+        transform: translateX(330px);
+    }
+}
 /* footer */
 
 #line{
@@ -2095,5 +2527,25 @@ header>nav>a.active{
         margin: 7px;
     }
 }
+@media (max-width: 425px) {
 
+    #line{
+        transform: translate(-5px,200px);
+        width: 80vw;
+    }
+    #footer_logo{
+        height: 30px;
+        transform: translate(20px,210px);
+    }
+    #footer_ribbon{
+        font-size: 10px;
+        transform: translate(150px,186px);
+    }
+    #footer_links{
+        transform: translate(150px,200px);
+    }
+    #footer_links>a>img{
+        height: 20px;
+    }
+}
 
