@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+
+  <style>
+
+    .sections{
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    #first{
+      background: white;
+    }
+   .header{
+      width: 100vw;
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+   #header1{
+     background: red;
+   }
+    .middle{
+      font-size: 100px;
+      font-family: "Noto Sans", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 1000;
+      font-style: normal;
+      width: fit-content;
+      height: fit-content;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    .cards{
+      font-size: 25px;
+      font-family: "Noto Sans", sans-serif;
+      color: white;
+      position: absolute;
+      left: 10px;
+      top: 15px;
+    }
+    #second{
+      background:steelblue;
+    }
+    #header2{
+      background: blue;
+    }
+    #third{
+      background: #9b9494;
+    }
+    #header3{
+      background: #342d26;
+    }
+    #fourth{
+      background: red;
+    }
+    #header4{
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+
+<section id="first" class="sections">
+  <span class="middle">Hello</span>
+  <div class="header" id="header1">
+    <span class="cards"><b>Card 1</b></span>
+  </div>
+</section>
+
+<section id="second" class="sections" >
+  <span class="middle">How</span>
+  <div class="header" id="header2">
+    <span class="cards"><b>Card 2</b></span>
+  </div>
+</section>
+
+<section id="third" class="sections" >
+  <span class="middle">Are</span>
+  <div class="header" id="header3">
+    <span class="cards"><b>Card 3</b></span>
+  </div>
+</section>
+
+<section id="fourth" class="sections" >
+  <span class="middle">You..?</span>
+  <div class="header" id="header4">
+    <span class="cards"><b>Card 4</b></span>
+  </div>
+</section>
+
+</body>
+</html>

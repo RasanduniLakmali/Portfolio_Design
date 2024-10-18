@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1</title>
+    <link rel="stylesheet" href="/assignments/CSS_Assignment3/Case_01/assets/styles/normalize.css">
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        section{
+            overflow: hidden;
+            height: 100vh;
+            width:100vw;
+            /*border: 1px solid black;*/
+            position: absolute;
+        }
+        section>section:first-child{
+            height: 50vh;
+            width: 50vw;
+            background: red;
+            left: 0;
+            position: absolute;
+        }
+        section>section:nth-child(2){
+            height: 50vh;
+            width: 50vw;
+            background: green;
+            right: 0;
+            position: absolute;
+        }
+        section>section:nth-child(3){
+            height: 50vh;
+            width: 50vw;
+            background: orange;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        section>section:nth-child(4){
+            height: 50vh;
+            width: 50vw;
+            background: deeppink;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        #middle{
+            width: 200px;
+            aspect-ratio: 1/1;
+            background: white;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+        #middle>div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+        .rec{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background: red;
+            border-radius: 0%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .corner{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            position: absolute;
+            border-radius: 50%;
+        }
+        #corner1{
+            top: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner2{
+            top: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner3{
+            bottom: calc(-15vw/2);
+            right: calc(-15vw/2);
+        }
+        #corner4{
+            bottom: calc(-15vw/2);
+            left: calc(-15vw/2);
+        }
+        #corner5{
+            right: 0;
+            left: 0;
+            margin: auto;
+            bottom:calc(-15vw/2) ;
+        }
+        #corner6{
+            right: 0;
+            left: 0;
+            margin: auto;
+            top: calc(-15vw/2);
+        }
+    </style>
+</head>
+
+<body>
+
+<section>
+
+    <section>
+        <div class="rec">
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="rec">
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="rec">
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section>
+        <div class="rec">
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <div id="middle">
+        <div></div>
+    </div>
+
+    <div id="corner1" class="corner"></div>
+    <div id="corner2" class="corner"></div>
+    <div id="corner3" class="corner"></div>
+    <div id="corner4" class="corner"></div>
+    <div id="corner5" class="corner"></div>
+    <div id="corner6" class="corner"></div>
+
+</section>
+
+</body>
+</html>

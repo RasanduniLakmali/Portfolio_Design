@@ -1,0 +1,46 @@
+body{
+    background: blue;
+}
+#circle1{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: grey;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#circle1::before{
+    content: "";
+    border: 12px solid white;
+    border-radius: 100%;
+    border-top-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+}
+#text{
+    color: white;
+    font-size: 40px;
+    /*transform: translate(120px,80px);*/
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#circle1:hover::before{
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}

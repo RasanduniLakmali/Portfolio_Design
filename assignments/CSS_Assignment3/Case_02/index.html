@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/Case_02/assets/styles/normalize.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=New+Amsterdam&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+        header{
+            height: 100px;
+            border: 2px solid white;
+            border-bottom-color: black;
+            position: relative;
+        }
+        #img1{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #navigation{
+            position: absolute;
+            right: 50px;
+            top: 35px;
+            display: inline;
+            height: fit-content;
+            margin: 0px 10px;
+        }
+        #navigation>a{
+            font-family: "Mukta", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            color: black;
+            text-decoration: none;
+            margin: 0px 10px;
+        }
+        main{
+            position: relative;
+        }
+        aside{
+            background: rebeccapurple;
+            position: absolute;
+            width: 250px;
+            margin: 0;
+            top: 0;
+            bottom: 0;
+        }
+        aside>nav>ul>li{
+            list-style: none;
+            color: white;
+            font-family: "Mukta", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        footer{
+            background: grey;
+
+        }
+        footer>div{
+            color: white;
+            padding: 8px 0px;
+            text-align: center;
+        }
+        main>section{
+            margin-left: 250px;
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            margin-top: 0;
+        }
+        #para1{
+            margin-top: 20px;
+        }
+        #para_last{
+            margin-bottom: 0;
+        }
+
+        main>section>section{
+            background: white;
+            position: relative;
+            height: 300px;
+
+        }
+        main>section>section>div{
+            margin-top: 5px;
+            background: url("/Case_02/assets/videos/monkey.gif");
+            height: 300px;
+            position: absolute;
+            width: calc(100%/3);
+
+        }
+        main>section>section>div:first-child{
+
+            border: 3px solid green;
+            border-top-color: #796e6e;
+            border-left-color: #796e6e;
+            left: 8px;
+        }
+        main>section>section>div:nth-child(2){
+            top: 5px;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border: 3px solid green;
+            border-top-color: #796e6e;
+        }
+        main>section>section>div:last-child{
+            top: 5px;
+            right: 8px;
+            margin: auto;
+            border: 3px solid green;
+            border-top-color: #796e6e;
+            border-right-color:#796e6e ;
+        }
+        main>section>p{
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- header section -->
+<header>
+
+    <div>
+        <img src="/Case_02/assets/images/ijse.png" id="img1" width="300px">
+    </div>
+
+    <!-- navigation -->
+    <div >
+        <nav id="navigation">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">Contacts</a>
+            <a href="">About us</a>
+        </nav>
+    </div>
+</header>
+
+<!-- home section -->
+<main>
+
+    <!-- sidebar -->
+    <aside>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contacts</li>
+                <li>About Us</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- content -->
+    <section>
+
+        <section>
+            <div></div>
+            <div ></div>
+            <div ></div>
+        </section>
+
+        <p id="para1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+
+        <p id="para_last">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur doloribus eos ex illo inventore iste nostrum quas, quos velit voluptas voluptatum? Distinctio dolores eaque explicabo hic nemo soluta.
+        </p>
+
+
+    </section>
+</main>
+
+<!-- footer section -->
+
+<footer>
+    <div>Developed by IJSE</div>
+</footer>
+
+</body>
+</html>

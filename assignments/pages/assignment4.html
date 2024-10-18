@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 04</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../assets/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        header{
+            background-color: black;
+            position: fixed;
+            top: 0px;
+            width: 100vw;
+            box-shadow: 2px 0px 10px 5px #525283;
+            z-index: 20;
+        }
+        #header_logo{
+            /*display: flex;*/
+            position: relative;
+            left: 15px;
+            margin-top: 2px;
+        }
+        .logo{
+            width: 180px;
+        }
+        header>nav{
+            position: absolute;
+            bottom: 0;
+            right: 200px;
+            top: 0;
+            height: fit-content;
+            width: fit-content;
+            margin: auto;
+            word-spacing: 35px;
+            margin-top: 22px;
+        }
+        header>nav>a{
+            color: white;
+            font-size: 15px;
+            font-family: "Lato", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-decoration: none;
+
+        }
+        header>nav>a:hover{
+            color: #06EA53;
+            transition-duration: 1s;
+        }
+        header>nav>a.active{
+            color: #06EA53;
+        }
+        #menu_icon{
+            font-size: 3.4rem;
+            color: #06EA53;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: -2px;
+            display: none;
+        }
+        #assignments_preview{
+            height: 100vh;
+            width: 100vw;
+            background-color: #2C2B2C;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            align-content: center;
+            overflow: hidden;
+        }
+        #assignments_preview>div{
+            height: 260px;
+            width: 200px;
+            border-radius: 40px;
+            margin-left: 45px;
+            background-image: linear-gradient(#4cbc72, white);
+        }
+        #assignments_preview>div>h5{
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 40px;
+            margin-left: 15px;
+        }
+        .codeBtn{
+            width: 70px;
+            height: 30px;
+            color: white;
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            background: #06EA53;
+            border-color: transparent;
+            border-radius: 10px;
+            transform: translate(55px,-40px);
+            cursor: pointer;
+        }
+        .runBtn{
+            width: 70px;
+            height: 30px;
+            color: white;
+            font-family: "Sen", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            background: #06EA53;
+            border-color: transparent;
+            border-radius: 10px;
+            transform: translate(-20px,20px);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!--logo section-->
+    <div id="header_logo">
+        <img src="/assets/images/my_logo.png" align="top" alt="This is my logo" class="logo">
+
+    </div>
+
+    <div class='bx bx-menu' id="menu_icon"></div>
+
+    <!--heading section-->
+
+    <nav id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+<section id="assignments_preview">
+    <div>
+        <h5>CASE 01</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_01">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_01/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+
+    </div>
+    <div>
+        <h5>CASE 02</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_02">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_02/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+    </div>
+    <div>
+        <h5>CASE 03</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_03">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_03/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+    </div>
+    <div>
+        <h5>CASE 04</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_04">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_04/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+    </div>
+    <div>
+        <h5>CASE 05</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_05">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_05/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+    </div>
+    <div>
+        <h5>CASE 06</h5>
+        <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4/tree/0672c5d21c415834747bfc87ea86a9402042edcd/Case_06">
+            <input type="button" value="Code" class="codeBtn">
+        </a>
+        <a href="/assignments/CSS_Assignment4/Case_06/index.html">
+            <input type="button" value="Run" class="runBtn">
+        </a>
+    </div>
+</section>
+<script src="../../js/script.js"></script>
+</body>
+</html>

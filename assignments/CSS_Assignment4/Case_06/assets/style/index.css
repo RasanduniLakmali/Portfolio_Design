@@ -1,0 +1,70 @@
+#content{
+
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/sky_img.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    margin: 0;
+}
+#car_img{
+    height: 160px;
+    width: 350px;
+    bottom: 18%;
+    position: fixed;
+    margin-left: 350px;
+}
+#road_img{
+    width: 280vw;
+    height: 36%;
+    bottom: 0;
+    margin-left: 0;
+    position: absolute;
+    animation: move 10s infinite;
+}
+#wheel_img1{
+
+    width: 65px;
+    height: 65px;
+    bottom: 20%;
+    margin-left: 380px;
+    position: fixed;
+    animation: rotateWheel 10s infinite;
+}
+#wheel_img2{
+
+    width: 65px;
+    height: 65px;
+    bottom: 20%;
+    margin-left: 595px;
+    position: fixed;
+    animation: rotateWheel 10s infinite;
+}
+#city_img{
+    position: absolute;
+    width: 300vw;
+    height: 65%;
+    bottom: 35%;
+    margin-left: 0;
+    animation: move 10s infinite;
+}
+@keyframes rotateWheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    100%{
+        transform: rotate(540deg);
+    }
+}
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2100px);
+    }
+}
