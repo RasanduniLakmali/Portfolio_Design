@@ -38,20 +38,17 @@ header>nav{
     word-spacing: 35px;
     margin-top: 22px;
 }
-header>nav>a{
+#navbar a{
     color: white;
     font-size: 15px;
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-style: normal;
     text-decoration: none;
-
-}
-header>nav>a:hover{
-    color: #06EA53;
     transition-duration: 1s;
 }
-header>nav>a.active{
+#navbar a:hover,
+#navbar a.active{
     color: #06EA53;
 }
 #menu_icon{
@@ -146,6 +143,48 @@ header>nav>a.active{
     font-weight: 700;
     font-style: normal;
     font-size: 50px;
+    color: transparent;
+    -webkit-text-stroke: .7px #06EA53;
+    background-image: linear-gradient(#06EA53,#06EA53);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2s;
+}
+#home_hd3::before{
+    content: '';
+    position: absolute;
+    top: 475px;
+    left: 90px;
+    width: 0;
+    height: 0.8%;
+    border-right: 2px solid #06EA53;
+    z-index: 1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes homeBgText {
+
+    0%,10%,100%{
+        background-position: -43rem 0;
+    }
+    65%,85%{
+        background-position: 0 0;
+    }
+}
+@keyframes homeCursorText {
+
+    0%,10%,100%{
+        width: 0;
+    }
+    65%,78%{
+        width: 36%;
+        opacity: 1;
+    }
+    /*75%,81%{*/
+    /*    opacity: 0;*/
+    /*}*/
 }
 #btn1{
     height: 40px;
@@ -471,7 +510,7 @@ header>nav>a.active{
 }
 #about_heading{
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-family: AnjaliOldLipi;
 }
 #about_heading2{
@@ -492,7 +531,7 @@ header>nav>a.active{
     height: 70px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    font-size: 17px;
+    font-size: 20px;
     font-family: Meera;
     font-weight: 80;
 }
@@ -502,41 +541,29 @@ header>nav>a.active{
 .second_words{
     color: #B8AEAE;
 }
-#rec1{
-    width: 250px;
+#cvBtn{
+    width: 200px;
     height: 50px;
-    background: black;
-    border-radius: 60px;
-}
-#rec2{
-    width: 180px;
-    height: 48px;
     background: #06EA53;
     border-radius: 60px;
-    transform: translateX(70px);
-}
-
-#rec2>h6{
     color: white;
-    font-size: 18px;
-    transform: translate(32px,12px);
+    border-color: transparent;
+    font-family: "DejaVu Sans Mono";
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
 }
-
-#circle{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: white;
-    transform: translate(12px,-43px);
-}
-#arrow{
-    width: 25px;
-    transform: translate(8px,6px);
+#cvBtn:hover{
+    transform: scale(1.1);
 }
 #name_tag{
     color: white;
     font-size: 32px;
-    transform: translate(300px,-43px);
+    transform: translate(300px,-20px);
     font-family: "Italianno", cursive;
     font-weight: 500;
     font-style: normal;
@@ -605,23 +632,20 @@ header>nav>a.active{
     }
     #about_para{
         font-size: 18px;
-        transform: translate(-170px,200px);
+        transform: translate(-170px,170px);
     }
     #image_section{
         transform: translate(-80px,-90px);
     }
-    #rec1{
-        width: 200px;
-        transform: translate(-160px,180px);
-    }
-    #rec2{
-        width: 130px;
-    }
-    #rec2>h6{
-        transform: translate(10px,10px);
+    #cvBtn{
+        width: 150px;
+        font-size: 15px;
+        top: 160px;
+        left: -180px;
+        height: 35px;
     }
     #name_tag{
-        transform: translate(100px,130px);
+        transform: translate(100px,180px);
     }
     #info{
         transform: translate(-170px,200px);
@@ -825,7 +849,7 @@ header>nav>a.active{
 }
 #edu_heading{
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     font-family: AnjaliOldLipi;
     position: relative;
     left: 45vw;
@@ -992,7 +1016,7 @@ header>nav>a.active{
         width: 150px;
     }
     #edu_img_section{
-        transform: translate(-440px,240px);
+        transform: translate(-460px,350px);
     }
     #edu_img{
         height: 150px;
@@ -1679,6 +1703,7 @@ header>nav>a.active{
     font-weight: 400;
     font-style: normal;
     top: 360px;
+    cursor: pointer;
 }
 #date1{
     font-family: "Kavoon", serif;
@@ -1942,14 +1967,15 @@ header>nav>a.active{
     width: 100vw;
     background-color: black;
     position: relative;
+
 }
 #assignments_heading{
     position: absolute;
     top: 10px;
     color: white;
     font-family: AnjaliOldLipi;
-    font-size: 30px;
-    left: 45vw;
+    font-size: 40px;
+    left: 40vw;
 }
 #viewBtn_rec1{
     height: 40px;
@@ -1973,6 +1999,7 @@ header>nav>a.active{
     font-optical-sizing: auto;
     font-weight: 2500;
     font-style: normal;
+    cursor: pointer;
 }
 #viewBtn_circle{
     height: 40px;
@@ -1993,13 +2020,20 @@ header>nav>a.active{
     height: 70vh;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-
+    margin-left: 40px;
+    margin-top: 60px;
 }
 #assignment_content>div{
     height: 230px;
     width: 210px;
     background: #2C2B2C;
     border-radius: 40px;
+    transition: transform 0.45s;
+}
+#assignment_content>div:hover{
+    border: 3px solid #499262;
+    box-shadow: 2px 2px 2px 2px #66ad7e;
+    transform: scale(1.05);
 }
 #assignment_content>div:first-child{
     transform: translate(160px,75px);
@@ -2045,7 +2079,23 @@ header>nav>a.active{
     background: #06EA53;
     color: white;
     border-color: transparent;
-    transform: translateX(65px);
+    transform: translate(40px,-17px);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+.github_icon{
+    height: 40px;
+    position: relative;
+    left: 60px;
+}
+.viewButtons:hover{
+    background: #2C2B2C;
+    border: 3px solid #06EA53;
+    box-shadow: 0px 0px 3px gray;
 }
 
 /**  Assignments page responsive **/
@@ -2071,6 +2121,16 @@ header>nav>a.active{
     }
     #viewBtn_rec1{
         left: 550px;
+    }
+    #assignment_content{
+        grid-template-columns: repeat(3,1fr);
+        transform: translate(-170px,-20px);
+    }
+    #assignment_content>div:nth-child(4){
+        display: none;
+    }
+    #assignment_content>div:nth-child(8){
+        display: none;
     }
 }
 @media (max-width: 425px) {
@@ -2186,7 +2246,7 @@ header>nav>a.active{
     top: 10px;
     color: white;
     font-family: AnjaliOldLipi;
-    font-size: 30px;
+    font-size: 35px;
     left: 40vw;
 }
 #skill_rec1{
@@ -2239,12 +2299,22 @@ header>nav>a.active{
     left: 675px;
     top: 60px;
 }
-#skill_content{
+#skill_content {
     transform: translateY(50px);
     width: 100vw;
     height: 300px;
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
+    animation: popUp 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes popUp {
+
+    5%{
+        transform: scale(1.1);
+    }
+
 }
 #skill_content>div{
     height: 220px;
@@ -2648,7 +2718,8 @@ header>nav>a.active{
     color: white;
     transform: translate(800px,-370px);
     font-family: AnjaliOldLipi;
-    font-size: 30px;
+    font-size: 40px;
+    position: relative;
 }
 .gallery_container{
     width: 100%;
@@ -2679,13 +2750,13 @@ header>nav>a.active{
 }
 
 .img{
-    position: relative;
     height: 370px;
-    width: 240px;
+    max-width: 100%; /* Make it responsive */
     filter: saturate(10%);
     transition: 0.7s;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
+    object-fit: cover;
 }
 
 .button{
@@ -2779,6 +2850,10 @@ header>nav>a.active{
     left: -60%;
 }
 
+
+
+
+
 /**  Gallery page responsive **/
 
 @media (max-width: 1440px) {
@@ -2852,7 +2927,7 @@ header>nav>a.active{
     top: 15px;
     color: white;
     font-family: AnjaliOldLipi;
-    font-size: 35px;
+    font-size: 40px;
     left: 45vw;
 }
 #contact_details>div:first-child>h4{
@@ -2865,6 +2940,7 @@ header>nav>a.active{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateX(130px);
+    animation: textclip 2s linear infinite;
 }
 #contact_details>div:first-child>p{
     font-size: 16px;
@@ -2897,6 +2973,7 @@ header>nav>a.active{
     left: 110px;
     top: 7px;
     background: #4e5450;
+
 }
 #message_form_heading{
     font-size: 30px;
@@ -2957,7 +3034,11 @@ header>nav>a.active{
     cursor: pointer;
     transform: scale(1.1);
 }
-
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
 /**  Contact page responsive **/
 
 @media (max-width: 1440px) {

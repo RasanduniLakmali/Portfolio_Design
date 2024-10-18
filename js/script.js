@@ -119,3 +119,15 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navBar.classList.toggle('active');
 }
+
+var app = document.getElementById('contact_heading2');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString('Let\'s Connect and ')
+    .typeString('<br>Create Amazing Projects!') // Insert a line break here
+    .pauseFor(2500)
+    .deleteAll()
+    .start();

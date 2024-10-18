@@ -50,10 +50,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inder&family=Kavoon&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -155,11 +159,10 @@
 
             <div id="about_headings">
 
-                <b><h5 id="about_heading">About me</h5></b>
+                <b><h5 id="about_heading" data-aos="flip-left">About me</h5></b>
                 <h2 id="about_heading2">Who is <span class="name">Rasanduni<br>Lakmali?</span></h2>
 
             </div>
-
 
             <div>
                 <p id="about_para" style="text-align: justify">
@@ -182,13 +185,14 @@
                 <div id="my_email"><span class="first_words">Email : </span><span class="second_words">rasandunilakmali26@gmail.com</span></div>
             </div>
 
-            <div id="rec1">
-                <div id="rec2"><h6>Download CV</h6></div>
-                <div id="circle">
-                    <img src="assets/images/arrow.png" alt="arrow icon" id="arrow">
-                </div>
-                <div></div>
-            </div>
+
+             <div id="rec1">
+<!--                <div id="rec2"><h6>Download CV</h6></div>-->
+                 <a href="">
+                 <input type="button" value="Download CV" id="cvBtn">
+                 </a>
+
+             </div>
 
             <div id="name_tag">Rasanduni Lakmali</div>
         </section>
@@ -293,7 +297,10 @@
               <h5 class="service_types" id="service5">Object oriented<br>Programming</h5>
               <img src="assets/images/db_manage_img.png" id="db_img" class="service_icons">
               <h5 class="service_types" id="service6">Database<br>Management</h5>
-              <img src="assets/images/service_logo.png" id="service_logo" class="service_icons">
+              <div data-aos="zoom-in">
+                  <img src="assets/images/service_logo.png" id="service_logo" class="service_icons">
+              </div>
+
 
           </section>
 
@@ -316,7 +323,7 @@
             <!-- Project 1 -->
                <div id="project1">
                    <img src="assets/images/connect4_img2.png" alt="connect4 game image" id="connect4_img2">
-                <div><span><input type="button" value="View in Github" id="githubBtn1" class="githubButtons"></span><span id="date1" class="dates">18 Mar 2024</span></div>
+                <div><span><a href=""><input type="button" value="View in Github" id="githubBtn1" class="githubButtons"></a></span><span id="date1" class="dates">18 Mar 2024</span></div>
                 <div class="date_circles" id="date_circle1"></div>
                 <h4 id="project1_heading" class="project_headings">Connect 4 Game</h4>
             </div>
@@ -333,7 +340,7 @@
             <div id="project3">
                  <img src="assets/images/project3_img1.png" alt="logo_of_company" id="project3_img1">
                 <h4 id="project3_heading" class="project_headings">Factory<br>Management System</h4>
-                <div><span><input type="button" value="View in Github" id="githubBtn3" class="githubButtons"></span><span id="date3" class="dates">27 May 2024</span></div>
+                <div><span><a href="https://github.com/RasanduniLakmali/First_Semester_Final_Project.git"><input type="button" value="View in Github" id="githubBtn3" class="githubButtons"></a></span><span id="date3" class="dates">27 May 2024</span></div>
                 <div class="date_circles"></div>
             </div>
         </section>
@@ -349,7 +356,9 @@
         <h4 id="assignments_heading">My Assignments</h4>
 
         <div id="viewBtn_rec1">
-            <input type="button" value="View All" id="viewBtn">
+            <a href="">
+                <input type="button" value="View All" id="viewBtn">
+            </a>
             <div id="viewBtn_circle">
                 <img src="assets/images/arrow.png" alt="arrow image" id="arrow2">
             </div>
@@ -357,61 +366,104 @@
 
         <!-- Content section -->
 
-        <div id="assignment_content">
+        <div id="assignment_content" data-aos="zoom-in-up">
+
             <!-- Assignment 1 -->
-            <div>
+            <div >
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 1</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
+
             </div>
 
             <!-- Assignment 2 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 2</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="https://github.com/RasanduniLakmali/My_Portfolio">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 3 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 3</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="assignments/pages/assignment3.html">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment3.git">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 4 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 4</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="assignments/pages/assignment4.html">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment4.git">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 5 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 5</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="https://github.com/RasanduniLakmali/Portfolio_Design.git">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 6 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 6</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="https://github.com/RasanduniLakmali/Bootstrap_POS_System.git">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 7 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 7</h5>
-                <input type="button" value="View" class="viewButtons">
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
 
             <!-- Assignment 8 -->
             <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 8</h5>
-                <input type="button" value="View" class="viewButtons">
+
+                <a href="">
+                    <input type="button" value="View" class="viewButtons">
+                </a>
+                <a href="">
+                    <img src="assets/images/github_icon.png" class="github_icon">
+                </a>
             </div>
         </div>
 
@@ -578,7 +630,7 @@
 
         <div id="contact_details">
             <div>
-                <h4>Let's Connect and Create<br>Amazing Projects!</h4>
+                <h4 id="contact_heading2">Let's Connect and Create<br>Amazing Projects!</h4>
                 <p>
                     Thank you for visiting my portfolio! If you have any<br>inquiries, project opportunities,
                     or just want to<br>connect, please feel free to reach out.
@@ -664,6 +716,9 @@
 </main>
 
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="js/script.js"></script>
+<script>AOS.init()</script>
 </body>
 </html>
