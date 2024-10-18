@@ -775,12 +775,13 @@ header>nav{
     #cvBtn{
         width: 160px;
         height: 50px;
-        top: 340px;
-        left: -10px;
+        /*top: 340px;*/
+        /*left: -10px;*/
+        transform: translate(20px,-10px);
     }
     #name_tag{
         position: absolute;
-        top: 410px;
+        top: 365px;
     }
 
 }
@@ -801,14 +802,26 @@ header>nav{
     #image_section{
         margin-left: -30px;
     }
-    #cvBtn{
-        width: 100px;
-        height: 30px;
-        font-size: 10px;
-        font-weight: 900;
-        top: 340px;
-        left: -10px;
+    /*#cvBtn{*/
+    /*    width: 100px;*/
+    /*    height: 30px;*/
+    /*    font-size: 10px;*/
+    /*    font-weight: 900;*/
+    /*    top: 340px;*/
+    /*    left: -10px;*/
 
+    /*}*/
+    #cvBtn{
+        width: 160px;
+        height: 50px;
+        /*top: 340px;*/
+        /*left: -10px;*/
+        transform: translate(20px,-10px);
+    }
+    #name_tag{
+        position: absolute;
+        top: 400px;
+        left: -10px;
     }
 }
 @media (max-width: 320px) {
@@ -2209,6 +2222,7 @@ header>nav{
         width: 200px;
     }
     #assignment_content{
+        gap: 15px;
         grid-template-columns: repeat(1,1fr);
     }
     #assignments_heading{
@@ -2232,8 +2246,7 @@ header>nav{
         transform: translate(230px,10px);
     }
     #viewBtn_rec1{
-        left: 130px;
-        top: 745px;
+        transform: translateY(-30px);
     }
     #assignment_content>div:nth-child(8){
         display: none;
