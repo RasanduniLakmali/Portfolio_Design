@@ -203,9 +203,10 @@
 
 <!-- Education section -->
 <main>
-    <section id="education">
+    <section id="education" >
 
-        <section id="edu_content">
+        <section id="edu_content" data-aos="fade-up"
+                 data-aos-anchor-placement="center-bottom">
 
             <h5 class="animate__animated animate__rubberBand" id="edu_heading" >Education</h5>
 
@@ -271,12 +272,15 @@
 
     <section id="services">
 
-         <section>
+
              <h5 id="service_heading1">Services</h5>
              <h4 id="service_heading2">I'm Specialized In</h4>
-         </section>
 
-          <section id="service_content">
+        <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+
+          <section id="service_content" >
               
             <div class="hexagon" id="hex1"></div>
             <div class="hexagon" id="hex2"></div>
@@ -297,15 +301,13 @@
               <h5 class="service_types" id="service5">Object oriented<br>Programming</h5>
               <img src="assets/images/db_manage_img.png" id="db_img" class="service_icons">
               <h5 class="service_types" id="service6">Database<br>Management</h5>
-              <div data-aos="zoom-in">
-                  <img src="assets/images/service_logo.png" id="service_logo" class="service_icons">
-              </div>
+              <img src="assets/images/service_logo.png" id="service_logo" class="service_icons">
+
 
 
           </section>
-
+        </div>
     </section>
-
 </main>
 
 <!-- Projects Section -->
@@ -477,7 +479,9 @@
     <section id="skills">
 
         <!-- Heading -->
-        <h4 id="skill_heading">My Skills and Achievements</h4>
+        <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+
+          <h4 id="skill_heading">My Skills and Achievements</h4>
 
         <div id="skill_rec1">
             <p id="skill_para">I am a full stack developer skilled in Java, HTML, MySQL, Figma, and CSS.I build robust backend solutions with Java and create responsive user interfaces with HTML and CSS. My expertise in MySQL ensures efficient database management, while Figma allows me to design high-fidelity prototypes. This diverse skill set enables me to deliver seamless and efficient web applications.</p>
@@ -550,7 +554,7 @@
                   <p>Honored with certificate for the participation for<br>Innovesta 2024</p>
               </div>
         </section>
-
+        </div>
     </section>
 </main>
 
@@ -559,6 +563,7 @@
 <main>
 
     <section id="gallery">
+
 
         <h4 id="gallery_heading">Gallery</h4>
 
@@ -714,6 +719,7 @@
     </section>
 
 </main>
+
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
