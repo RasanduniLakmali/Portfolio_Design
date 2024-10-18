@@ -562,6 +562,7 @@ header>nav{
     background-color: #1d1c1c;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    position: relative;
 }
 #square{
     height: 300px;
@@ -618,6 +619,7 @@ header>nav{
 .second_words{
     color: #B8AEAE;
 }
+
 #cvBtn{
     width: 200px;
     height: 50px;
@@ -628,8 +630,8 @@ header>nav{
     font-family: "DejaVu Sans Mono";
     font-weight: 400;
     font-size: 20px;
-    position: relative;
-    top: 25px;
+    position: absolute;
+    top: 600px;
     cursor: pointer;
     transition-duration: 0.5s;
     transition-timing-function: ease-out;
@@ -639,7 +641,7 @@ header>nav{
 }
 #name_tag{
     color: white;
-    font-size: 32px;
+    font-size: 35px;
     transform: translate(300px,-20px);
     font-family: "Italianno", cursive;
     font-weight: 500;
@@ -654,12 +656,8 @@ header>nav{
         height: 801px;
     }
 
-    #rec1 {
-        transform: translateY(60px);
-    }
-
     #name_tag {
-        transform: translate(300px, 15px);
+        transform: translate(300px, 30px);
     }
 
     #info {
@@ -670,6 +668,9 @@ header>nav{
     #about_para {
         font-size: 21px;
         transform: translateY(20px);
+    }
+    #cvBtn{
+        top: 650px;
     }
 }
 @media (max-width: 1024px) {
@@ -715,17 +716,14 @@ header>nav{
         transform: translate(-80px,-90px);
     }
     #cvBtn{
-        width: 150px;
-        font-size: 15px;
-        top: 160px;
-        left: -180px;
-        height: 35px;
+        top: 710px;
+        left: -170px;
     }
     #name_tag{
-        transform: translate(100px,180px);
+        transform: translate(100px,150px);
     }
     #info{
-        transform: translate(-170px,200px);
+        transform: translate(-170px,180px);
     }
 }
 @media (max-width: 425px) {
@@ -765,45 +763,50 @@ header>nav{
     #info{
         display: block;
         font-size: 17px;
-        transform: translate(45px,-20px);
+        transform: translate(45px,-60px);
     }
     #address,
     #my_email{
         transform: translateX(1px);
     }
-    #info>div{
-        margin: 10px;
-    }
+    /*#info>div{*/
+    /*    margin: 10px;*/
+    /*}*/
     #cvBtn{
-        top: 30px;
-        left: 10px;
-
+        width: 160px;
+        height: 50px;
+        top: 340px;
+        left: -10px;
     }
     #name_tag{
-        margin-top: 30px;
+        position: absolute;
+        top: 410px;
     }
+
 }
 @media (max-width: 375px) {
 
     #about_para{
-        font-size: 12px;
-        transform: translateX(40px);
+        font-size: 10px;
+        transform: translateX(-50px);
     }
     #about_headings{
         transform: translate(40px,30px);
     }
     #name_tag{
         font-size: 20px;
-        margin-left: -40px;
+        left: -20px;
+        top: 430px;
     }
     #image_section{
         margin-left: -30px;
     }
     #cvBtn{
         width: 100px;
+        height: 30px;
         font-size: 10px;
-        font-weight: 500;
-        top: 30px;
+        font-weight: 900;
+        top: 340px;
         left: -10px;
 
     }
@@ -815,6 +818,7 @@ header>nav{
     }
     #about_para{
         font-size: 10px;
+        transform: translateX(-70px);
     }
     #name_tag{
         transform: translate(100px,55px);
@@ -870,12 +874,13 @@ header>nav{
         margin: 10px;
     }
     #cvBtn{
-        top: 30px;
+        width: 160px;
+        height: 50px;
+        top: 440px;
         left: 40px;
-
     }
     #name_tag{
-        transform: translate(220px,60px);
+        transform: translate(240px,20px);
     }
 }
 
@@ -1939,20 +1944,23 @@ header>nav{
 }
 @media (max-width: 375px) {
 
-     #project_content{
-         transform: translateX(-15px);
-     }
+    #project_content>div{
+        height: 200px;
+        width: 200px;
+    }
+    #project_content{
+        transform: translate(30px,-30px);
+        gap: 50px;
+    }
     .githubButtons{
-        width: 100px;
-        font-size: 12px;
+        transform: translate(-230px,190px);
     }
     #date1,
     #date2{
-        left: 350px;
-        top: 100px;
+        transform: translate(-100px,150px);
     }
     #project_heading2{
-        left: 50px;
+        left: 80px;
     }
 }
 @media (max-width: 320px) {
@@ -1964,17 +1972,18 @@ header>nav{
     #project_content>div{
         height: 200px;
         width: 200px;
+
+    }
+    #project_content{
         transform: translateY(-20px);
-        gap: 30px;
+        gap: 50px;
     }
     .githubButtons{
-        top: 220px;
-        left: -10px;
+        transform: translate(-230px,190px);
     }
     #date1,
     #date2{
-        left: 240px;
-        top: 250px;
+        transform: translate(-100px,150px);
     }
 }
 @media (max-width: 500px) {
@@ -2163,11 +2172,11 @@ header>nav{
 @media (max-width: 1024px) {
 
     #assignment_content{
-        transform: translate(-115px,40px);
+        transform: translate(-150px,20px);
         gap: 30px;
     }
     #assignments_heading{
-        left: 40vw;
+        left: 35vw;
     }
     #viewBtn_rec1{
         left: 750px;
@@ -2184,7 +2193,7 @@ header>nav{
     }
     #assignment_content{
         grid-template-columns: repeat(3,1fr);
-        transform: translate(-170px,-20px);
+        transform: translate(-160px,-20px);
     }
     #assignment_content>div:nth-child(4){
         display: none;
@@ -2232,6 +2241,10 @@ header>nav{
 }
 @media (max-width: 375px) {
 
+    #assignments_heading{
+
+        left: 20vw;
+    }
     #assignment_content>div>img{
         height: 50px;
         position: relative;
@@ -2242,6 +2255,13 @@ header>nav{
     }
     #assignment_content>div{
         height: 170px;
+    }
+    #assignment_content{
+        transform: translate(-210px,-20px);
+        gap: 20px;
+    }
+    #viewBtn_rec1{
+        transform: translate(-40px,-30px);
     }
     #assignment_content>div:nth-child(4),
     #assignment_content>div:nth-child(5),
@@ -2255,9 +2275,16 @@ header>nav{
     #assignment_content>div:nth-child(3){
         transform: translate(200px,10px);
     }
+
+}
+@media (max-width: 320px) {
+
+    #assignment_content{
+        transform: translate(-210px,-20px);
+        gap: 20px;
+    }
     #viewBtn_rec1{
-        left: 100px;
-        top: 715px;
+        transform: translate(-40px,-30px);
     }
 }
 @media (max-width: 500px) {
@@ -2291,9 +2318,13 @@ header>nav{
     }
     #viewBtn_rec1{
         left: 130px;
-        top: 745px;
+        top: 760px;
     }
-    #assignment_content>div:nth-child(8){
+    #assignment_content>div:nth-child(8),
+    #assignment_content>div:nth-child(4),
+    #assignment_content>div:nth-child(5),
+    #assignment_content>div:nth-child(6),
+    #assignment_content>div:nth-child(7){
         display: none;
     }
 }
@@ -2653,7 +2684,7 @@ header>nav{
 @media (max-width: 375px) {
 
     #skill_rec1 {
-        left: 35px;
+        transform: translateX(-40px);
     }
     #skill_content{
         transform: translate(-123px,-20px);
@@ -2675,17 +2706,21 @@ header>nav{
         height: 130px;
         transform: translate(90px,45px);
     }
+    #skill_heading{
+
+        left: -40vw;
+    }
 }
 @media (max-width: 320px) {
 
     #skill_heading{
         font-size: 17px;
-        left: 20vw;
+        left: -10vw;
     }
     #skill_rec1 {
         height: 120px;
-        width: 250px;
-        left: 60px;
+        width: 200px;
+        left: -10px;
         top: 110px;
     }
     #skill_para{
@@ -2818,8 +2853,8 @@ header>nav{
 }
 
 .img{
-    height: 370px;
-    max-width: 100%; /* Make it responsive */
+    height: 420px;
+    width: 300px;
     filter: saturate(10%);
     transition: 0.7s;
     background-color: rgba(0, 0, 0, 0.4);
@@ -3003,7 +3038,7 @@ header>nav{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateX(130px);
-    /*animation: textclip 2s linear infinite;*/
+
 }
 #contact_details>div:first-child>p{
     font-size: 16px;
@@ -3032,8 +3067,8 @@ header>nav{
     height: 500px;
     border: 1px solid #06EA53;
     border-radius: 20px;
-    position: relative;
-    left: 110px;
+    position: absolute;
+    left: 900px;
     top: 7px;
     background: #4e5450;
 
@@ -3088,8 +3123,11 @@ header>nav{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    margin-left: 150px;
-    margin-top: 20px;
+    /*margin-left: 150px;*/
+    /*margin-top: 20px;*/
+    position: absolute;
+    top: 440px;
+    left: 150px;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
 }
@@ -3097,11 +3135,7 @@ header>nav{
     cursor: pointer;
     transform: scale(1.1);
 }
-/*@keyframes textclip {*/
-/*    to {*/
-/*        background-position: 200% center;*/
-/*    }*/
-/*}*/
+
 /**  Contact page responsive **/
 
 @media (max-width: 1440px) {
@@ -3121,14 +3155,14 @@ header>nav{
         transform: translateX(-120px);
     }
     #message_form{
-        height: 470px;
+        height: 480px;
         width: 350px;
-        left: 50px;
-        transform: translateY(30px);
+        left: 550px;
+        top: 40px;
     }
     #submit_btn{
-        margin-left: 120px;
-        margin-top: 5px;
+        top: 440px;
+        left: 130px;
     }
     .labels,
     .fields,
@@ -3155,8 +3189,8 @@ header>nav{
     #message_form{
         height: 400px;
         width: 300px;
-        left: -10px;
-        top: -30px;
+        left: 380px;
+        top: 40px;
     }
     #message_form_heading{
         font-size: 25px;
@@ -3174,8 +3208,8 @@ header>nav{
         height: 40px;
     }
     #submit_btn{
-        margin-top: 5px;
-        margin-left: 100px;
+        top: 350px;
+        left: 110px;
     }
     #info2{
         transform: translate(80px,30px);
@@ -3194,10 +3228,8 @@ header>nav{
         transform: translate(290px,-40px);
     }
     #message_form{
-        height: 400px;
-        width: 300px;
-        left: -130px;
-        top: 110px;
+        height: 200px;
+        transform: translate(-10px,20px);
     }
     #contact_details>div:first-child>p {
         font-size: 12px;
@@ -3211,14 +3243,15 @@ header>nav{
     #info2>div>img{
         transform: translateX(330px);
     }
+    #submit_btn{
+        top: 350px;
+        left: 90px;
+    }
 }
 @media (max-width: 375px) {
 
     #message_form{
-        height: 340px;
-        width: 200px;
-        left: -180px;
-        top: 110px;
+        transform: translate(-30px,10px);
     }
     #message_form_heading{
         font-size: 20px;
@@ -3229,17 +3262,17 @@ header>nav{
         /*transform: translateY(-50px);*/
     }
     .fields{
-        width: 120px;
+        width: 180px;
         transform: translateY(-10px);
     }
     #message_form>form>textarea{
-        width: 120px;
+        width: 180px;
         height: 20px;
         transform: translateY(-10px);
     }
     #submit_btn{
-        margin-top: -10px;
-        margin-left: 45px;
+        top: 320px;
+        left: 90px;
     }
     #contact_details>div:first-child>h4{
         transform: translate(240px,-40px);
@@ -3248,7 +3281,7 @@ header>nav{
         transform: translate(290px, -60px);
     }
     #info2>div>img{
-        transform: translateX(260px);
+
     }
     #contact_heading{
         left: 37vw;
@@ -3257,7 +3290,7 @@ header>nav{
 @media (max-width: 320px) {
 
     #message_form{
-        left: -130px;
+        left: -180px;
         top: 120px;
     }
     #contact_details>div:first-child>p{
@@ -3280,10 +3313,10 @@ header>nav{
         transform: translate(260px,-40px);
     }
     #message_form{
-        height: 380px;
+        height: 410px;
         width: 270px;
-        left: -180px;
-        top: 110px;
+        left: 20px;
+        top: 140px;
     }
     #contact_details>div:first-child>p {
         font-size: 12px;
@@ -3296,6 +3329,10 @@ header>nav{
     }
     #info2>div>img{
         transform: translateX(330px);
+    }
+    #submit_btn{
+        top: 350px;
+        left: 80px;
     }
 }
 
@@ -3352,17 +3389,17 @@ header>nav{
 @media (max-width: 1024px) {
 
     #line{
-        transform: translate(-5px,150px);
+        transform: translate(-5px,100px);
         width: 87vw;
     }
     #footer_logo{
-        transform: translate(40px,170px);
+        transform: translate(40px,120px);
     }
     #footer_ribbon{
-        transform: translate(300px,130px);
+        transform: translate(300px,70px);
     }
     #footer_links{
-        transform: translate(750px,100px);
+        transform: translate(750px,40px);
     }
     #footer{
         transform: translateY(50px);
@@ -3372,14 +3409,14 @@ header>nav{
 
     #footer_logo{
         height: 40px;
-        transform: translate(20px,180px);
+        transform: translate(20px,120px);
     }
     #footer_ribbon{
         font-size: 16px;
-        transform: translate(200px,150px);
+        transform: translate(180px,85px);
     }
     #footer_links{
-        transform: translate(535px,120px);
+        transform: translate(535px,55px);
     }
     #footer_links>a{
         margin: 7px;
@@ -3388,7 +3425,7 @@ header>nav{
 @media (max-width: 425px) {
 
     #line{
-        transform: translate(-5px,200px);
+        transform: translate(-5px,100px);
         width: 80vw;
     }
     #footer_logo{
@@ -3411,6 +3448,10 @@ header>nav{
     #footer_links{
         transform: translate(100px,210px);
     }
+    #line{
+        transform: translate(-5px,10px);
+        width: 80vw;
+    }
 }
 @media (max-width: 320px) {
 
@@ -3429,19 +3470,19 @@ header>nav{
 @media (max-width: 500px) {
 
     #line{
-        transform: translate(-5px,200px);
+        transform: translate(-5px,270px);
         width: 80vw;
     }
     #footer_logo{
         height: 30px;
-        transform: translate(20px,210px);
+        transform: translate(25px,280px);
     }
     #footer_ribbon{
         font-size: 10px;
-        transform: translate(150px,186px);
+        transform: translate(150px,255px);
     }
     #footer_links{
-        transform: translate(150px,220px);
+        transform: translate(150px,280px);
     }
     #footer_links>a>img{
         height: 20px;
