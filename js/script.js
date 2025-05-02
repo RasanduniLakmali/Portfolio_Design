@@ -120,3 +120,23 @@ menuIcon.onclick = () => {
     navBar.classList.toggle('active');
 }
 
+$("#submit_btn").click(function (){
+    Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Email Sent Successfully!',
+        confirmButtonColor: '#3085d6'
+    });
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 900,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+    });
+});

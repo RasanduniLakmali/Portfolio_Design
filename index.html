@@ -59,6 +59,9 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
 </head>
 <body>
 <!-- header section -->
@@ -164,7 +167,7 @@
 
             </div>
 
-            <div>
+            <div data-aos="zoom-in">
                 <p id="about_para" style="text-align: justify">
                     I am an undergraduate student in Software Engineering at<br>
                     the highly recommended IJSE institute. With skills in both<br>
@@ -281,7 +284,7 @@
              data-aos-easing="ease-in-sine">
 
           <section id="service_content" >
-              
+
             <div class="hexagon" id="hex1"></div>
             <div class="hexagon" id="hex2"></div>
             <div class="hexagon" id="hex3"></div>
@@ -323,7 +326,7 @@
         <section id="project_content">
 
             <!-- Project 1 -->
-               <div id="project1">
+               <div data-aos="flip-left" id="project1">
                    <img src="assets/images/connect4_img2.png" alt="connect4 game image" id="connect4_img2">
                 <div><span><a href=""><input type="button" value="View in Github" id="githubBtn1" class="githubButtons"></a></span><span id="date1" class="dates">18 Mar 2024</span></div>
                 <div class="date_circles" id="date_circle1"></div>
@@ -331,7 +334,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div>
+            <div data-aos="flip-left">
                 <img src="assets/images/stock_img.jpg" alt="stock_management image" id="stock_img">
                 <h4 id="project2_heading" class="project_headings">Stock Management<br>System</h4>
                 <div><span><input type="button" value="View in Github" id="githubBtn2" class="githubButtons"></span><span id="date2" class="dates">03 Dec 2023</span></div>
@@ -339,12 +342,19 @@
             </div>
 
              <!-- Project 3 -->
-            <div id="project3">
+            <div data-aos="flip-left" id="project3">
                  <img src="assets/images/project3_img1.png" alt="logo_of_company" id="project3_img1">
                 <h4 id="project3_heading" class="project_headings">Factory<br>Management System</h4>
                 <div><span><a href="https://github.com/RasanduniLakmali/First_Semester_Final_Project.git"><input type="button" value="View in Github" id="githubBtn3" class="githubButtons"></a></span><span id="date3" class="dates">27 May 2024</span></div>
                 <div class="date_circles"></div>
             </div>
+
+<!--            <div data-aos="flip-left" id="project4">-->
+<!--                <img src="assets/images/project4_img1.png" alt="logo_of_company" id="project4_img1">-->
+<!--                <h4 id="project4_heading" class="project_headings">ECommerce<br>Website</h4>-->
+<!--                <div><span><a href="https://github.com/RasanduniLakmali/First_Semester_Final_Project.git"><input type="button" value="View in Github" id="githubBtn4" class="githubButtons"></a></span><span id="date4" class="dates">27 May 2024</span></div>-->
+<!--                <div class="date_circles"></div>-->
+<!--            </div>-->
         </section>
     </section>
 </main>
@@ -371,7 +381,7 @@
         <div id="assignment_content" data-aos="zoom-in-up">
 
             <!-- Assignment 1 -->
-            <div >
+            <div>
                 <img src="assets/images/assignment_img.png" alt="image of assignment">
                 <h5>Assignment 1</h5>
                 <a href="">
@@ -438,7 +448,7 @@
                 <a href="">
                     <input type="button" value="View" class="viewButtons">
                 </a>
-                <a href="https://github.com/RasanduniLakmali/Bootstrap_POS_System.git">
+                <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment6-POS.git">
                     <img src="assets/images/github_icon.png" class="github_icon">
                 </a>
             </div>
@@ -450,7 +460,7 @@
                 <a href="">
                     <input type="button" value="View" class="viewButtons">
                 </a>
-                <a href="">
+                <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment7.git">
                     <img src="assets/images/github_icon.png" class="github_icon">
                 </a>
             </div>
@@ -463,7 +473,7 @@
                 <a href="">
                     <input type="button" value="View" class="viewButtons">
                 </a>
-                <a href="">
+                <a href="https://github.com/RasanduniLakmali/Internet_Technologies_Assignment8.git">
                     <img src="assets/images/github_icon.png" class="github_icon">
                 </a>
             </div>
@@ -619,6 +629,8 @@
        </div>
     </section>
 
+
+
 </main>
 
 <!-- Contact Section -->
@@ -635,7 +647,7 @@
 
         <div id="contact_details">
             <div>
-                <h4 id="contact_heading2">Let's Connect and Create<br>Amazing Projects!</h4>
+                <h4 data-aos="fade-down-right" id="contact_heading2">Let's Connect and Create<br>Amazing Projects!</h4>
                 <p>
                     Thank you for visiting my portfolio! If you have any<br>inquiries, project opportunities,
                     or just want to<br>connect, please feel free to reach out.
@@ -656,7 +668,7 @@
 
         <!-- Message Form -->
 
-        <div id="message_form">
+        <div data-aos="flip-right" id="message_form">
 
             <form action="detail.html" method="post">
 
@@ -681,7 +693,7 @@
                         cols="30">
                 </textarea>
                 <br>
-                <button type="submit" id="submit_btn">Submit</button>
+                <button type="button" id="submit_btn">Submit</button>
 
             </form>
         </div>
@@ -721,10 +733,23 @@
 </main>
 
 
-
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-<script src="js/script.js"></script>
-<script>AOS.init()</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 900,
+        easing: 'ease',
+        once: false,
+        mirror: false,
+        anchorPlacement: 'top-bottom'
+    });
+});</script>
 </body>
 </html>

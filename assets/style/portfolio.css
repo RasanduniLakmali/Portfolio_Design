@@ -1220,7 +1220,7 @@ header>nav{
     left: 40vw;
 }
 #service_content{
-    transform: translateX(80px);
+    transform: translateX(220px);
 }
 .hexagon{
     position: relative;
@@ -1841,6 +1841,25 @@ header>nav{
     left: 190px;
     top: 370px;
 }
+#project4_heading{
+    left: 40px;
+    top: 250px;
+}
+#date4{
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #06EA53;
+    position: absolute;
+    left: 190px;
+    top: 370px;
+}
+#project4_img1{
+    height: 160px;
+    position: absolute;
+    left: 90px;
+    top: 20px;
+}
 
 /**  Projects page responsive **/
 
@@ -2245,9 +2264,7 @@ header>nav{
     #assignment_content>div:nth-child(3){
         transform: translate(230px,10px);
     }
-    #viewBtn_rec1{
-        transform: translateY(-30px);
-    }
+
     #assignment_content>div:nth-child(8){
         display: none;
     }
@@ -2274,7 +2291,7 @@ header>nav{
         gap: 20px;
     }
     #viewBtn_rec1{
-        transform: translate(-40px,-30px);
+        /*transform: translate(-40px,-30px);*/
     }
     #assignment_content>div:nth-child(4),
     #assignment_content>div:nth-child(5),
@@ -2297,7 +2314,7 @@ header>nav{
         gap: 20px;
     }
     #viewBtn_rec1{
-        transform: translate(-40px,-30px);
+        /*transform: translate(-40px,-30px);*/
     }
 }
 @media (max-width: 500px) {
@@ -2367,7 +2384,7 @@ header>nav{
     background: black;
     color: white;
     position: absolute;
-    left: 480px;
+    left: 620px;
     top: 150px;
 
 }
