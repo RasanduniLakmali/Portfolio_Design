@@ -5,8 +5,7 @@ This portfolio is a showcase of my journey as a **Frontend Developer** in traini
 
 ## 🚀 Live Preview
 
-🌐 [Click here to view my portfolio](portfolio-design-tan.vercel.app
-)  
+🌐 [Click here to view my portfolio](https://portfolio-design-tan.vercel.app/)  
 
 
 ## 🛠️ Built With
